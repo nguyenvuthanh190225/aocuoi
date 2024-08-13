@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <style>
+        /* CSS để hiển thị giỏ hàng và sản phẩm */
+        .content-gril__colum4 {
+            margin: 20px;
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+        .content-gril__colum4-content {
+            text-align: center;
+        }
+        .content-gril__colum-img img {
+            width: 100px;
+            height: 100px;
+        }
+        .titkec p {
+            cursor: pointer;
+            color: blue;
+        }
+        .header-cart {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #f0f0f0;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #cartModal {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 300px;
+            height: 100%;
+            background-color: #fff;
+            border-left: 1px solid #ddd;
+            display: none;
+            flex-direction: column;
+            padding: 20px;
+        }
+        .cart-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .cart-item img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+        .checkout-button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: auto; /* Đẩy nút thanh toán xuống dưới cùng */
+            transition: background-color 0.3s ease;
+        }
+        .checkout-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="content-gril__colum4">
+        <div class="content-gril__colum4-content">
+            <div class="content-gril__colum-img">
+                <img src="img/img/vay4.jpg" alt="" class="content-gril__colum4-img" data-product="DE50794" data-price="1000000">
+            </div>
+            <p class="masanpham">DE50794</p>
+            <p class="gia">1.000.000Đ</p>
+            <div class="titkec">
+                <p onclick="addToCart(this)">To add cart</p>
+                <div></div>
+                <p>Buy</p>
+            </div>
+        </div>
+    </div>
+
+    <button onclick="openCart()" class="header-cart"> 
+        <i class="fa-solid fa-cart-shopping"></i>
+    </button>
+
+    <div id="cartModal">
+        <div id="cart-items"></div>
+        <p id="total"></p>
+        <button onclick="closeCart()">Close</button>
+        <button class="checkout-button" onclick="checkout()">Checkout</button>
+    </div>
+
+    <script>
+        let cart = [];
+
+        function addToCart(buttonElement) {
+            // Tìm phần tử cha chứa thông tin sản phẩm
+            const productContainer = buttonElement.closest('.content-gril__colum4-content');
+            
+            // Lấy thông tin sản phẩm từ các thuộc tính dữ liệu của hình ảnh
+            const image = productContainer.querySelector('.content-gril__colum-img img').src;
+            const productCode = productContainer.querySelector('.masanpham').textContent;
+            const priceText = productContainer.querySelector('.gia').textContent;
+            
+            // Chuyển đổi giá từ chuỗi có dấu phân cách thành số
+            const numericPrice = parseFloat(priceText.replace(/[^0-9]/g, ''));
+
+            // Thêm sản phẩm vào giỏ hàng
+            cart.push({ image, productCode, price: numericPrice });
+            renderCart();
+        }
+
+        function renderCart() {
+            const cartItems = document.getElementById('cart-items');
+            const totalElement = document.getElementById('total');
+            cartItems.innerHTML = '';
+            let total = 0;
+            cart.forEach((item, index) => {
+                total += item.price;
+                cartItems.innerHTML += `
+                    <div class="cart-item">
+                        <img src="${item.image}" alt="Product Image">
+                        <p>${item.productCode}</p>
+                        <p>${item.price.toLocaleString()} Đ</p>
+                        <button onclick="removeFromCart(${index})">Remove</button>
+                    </div>
+                `;
+            });
+            totalElement.innerText = `Total: ${total.toLocaleString()} Đ`;
+        }
+
+        function removeFromCart(index) {
+            cart.splice(index, 1);
+            renderCart();
+        }
+
+        function clearCart() {
+            cart = [];
+            renderCart();
+        }
+
+        function openCart() {
+            document.getElementById('cartModal').style.display = 'flex';
+        }
+
+        function closeCart() {
+            document.getElementById('cartModal').style.display = 'none';
+        }
+
+        function checkout() {
+            alert('Proceeding to checkout!');
+            // Thực hiện hành động thanh toán ở đây, như chuyển hướng đến trang thanh toán hoặc gửi dữ liệu đến máy chủ
+        }
+
+        // Đóng giỏ hàng khi bấm ra ngoài
+        window.onclick = function(event) {
+            const cartModal = document.getElementById('cartModal');
+            if (event.target === cartModal) {
+                closeCart();
+            }
+        }
+    </script>
+</body>
+</html>

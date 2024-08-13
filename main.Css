@@ -46,10 +46,7 @@
     top: -20px;
 }
 
-
-
-
-
+/* button */
 
 
 /* Cart Modal */
@@ -58,8 +55,14 @@
     font-size: 20px;
     color: #fff;
     background-color: var(--primary-color);
-    border: none
+    border: none;
+    opacity: 1;
 }
+
+.header-cart:hover {
+  opacity: 0.7;
+}
+
 .cart-modal {
     display: none;
     position: fixed;
@@ -77,11 +80,14 @@
 
 .cart-modal-content {
     width: 400px;
+    max-height: 55vh;
     background-color: var(--while-color);
     padding: 20px;
     border-radius: 5px;
     max-width: 500px;
     position: relative;
+    overflow-y: auto; 
+    overflow-x: hidden;
 }
 
 .cart-modal-header {
@@ -99,13 +105,13 @@
 .close-cart {
     font-size: 30px;
     padding:4px 8px;
-    color: var(--while-color);
+    color: red;
     cursor: pointer;
-    background-color: var(--primary-color);
 }
 
 .close-cart:hover {
-    background-color: red;
+    background-color: #fc4a4a;
+    color: var(--while-color);
     border-radius: 3px ;
     transition: all .3s ease-in-out;
 
@@ -118,18 +124,18 @@
 }
 
 .cart-item button {
-    padding: 5px 10px;
-    background-color: var(--primary-color);
-    color: var(--while-color);
+    height: 40px;
+    font-weight: 600;
+    padding: 2px 6px;
+    color: red;
     border: none;
     border-radius: 3px;
     cursor: pointer;
 }
 
 .cart-item button:hover {
-    background-color: var(--while-color);
-    color: var(--primary-color);
-    box-shadow: 0 0 15px 5px rgb(240, 142, 129, 0.7);
+    background-color: red;
+    color: var(--while-color);
 }
 
 .total {
@@ -144,17 +150,32 @@
     border-radius: 5px;
     cursor: pointer;
     margin-top: 20px;
+    font-size: 18px;
+    font-weight: 600;
     width: 100%;
     text-align: center;
-    background-color: var(--primary-color);
-    color:var(--while-color);
+    color: var(--primary-color);
     transition: all .3s ease-in-out;
 }
 
 .clear-cart:hover {
-    box-shadow: 0 0 15px 5px rgb(240, 142, 129, 0.7);
-    background-color: var(--while-color);
-    color: var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--while-color);
+}
+
+.pay {
+  float: right;
+  margin-top: 10px;
+  font-size: 18x;
+  font-weight: 600;
+  padding: 6px 10px;
+  color: red;
+  border-radius: 8px;
+}
+
+.pay:hover {
+  box-shadow: 0 0 15px 5px rgb(240, 142, 129, 0.7);
+
 }
 
 
