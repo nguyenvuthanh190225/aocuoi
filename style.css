@@ -493,9 +493,10 @@ photo */
     align-items: center;
     justify-content: space-around;
     display: flex;
-    height: 60px;
+    height: 90px;
     width: 100%;
-    background-color: var(--primary-color);
+    background-color: #212529;
+    /* background-color: var(--primary-color); */
 }
 
 .footer-input__content {
@@ -510,40 +511,7 @@ photo */
     display:flex;
 }
 
-.footer-input__input input {
-    padding-left: 30px;
-    width: 450px;
-    height: 40px;
-    border: 1px solid rgb(139 92 246);
-    border-radius: 10px;
-    outline: none;
-}
-
-.footer-input__input input:hover {
-    background: linear-gradient(
-        to right,
-        rgb(255, 192, 203, 0.9) 0%,         
-        #f5f5f5 25%,    
-        rgb(255, 192, 203, 0.9) 58%,    
-        rgb(255, 192, 203, 0.9) 65%,       
-        #f5f5f5 75%,
-        rgb(255, 192, 203, 0.9) 80%,        
-        rgb(255, 192, 203, 0.9) 85%,       
-        rgb(255, 192, 203, 0.9) 90%,       
-        #f5f5f5 100%
-    );
-}
-
-.footer-input__input input::-webkit-input-placeholder {
-    color: var(--primary-color);
-}
-
-.footer-input__input input:hover {
-    box-shadow: 0 0 15px 5px rgb(240, 142, 129, 0.7);
-}
-
 .gui {
-    margin-left: 6px;
     text-decoration: none;
     align-items: center;
     justify-content: center;
@@ -552,7 +520,6 @@ photo */
     height: 40px;
     background-color: rgb(139 92 246);
     color: var(--while-color);
-    border-radius: 10px;
 }
 
 .gui:hover {
