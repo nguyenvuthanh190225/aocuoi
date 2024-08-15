@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart Modal</title>
+    <style>
+        /* CSS cơ bản cho trang web và modal giỏ hàng */
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .product-list {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        
+        .product-item {
+            width: 30%;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .product-item h2 {
+            margin: 10px 0;
+        }
+        
+        .product-item p {
+            margin: 10px 0;
+            font-size: 16px;
+            color: #333;
+        }
+        
+        .add-to-cart {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .add-to-cart:hover {
+            background-color: #45a049;
+        }
+        
+        /* Modal giỏ hàng */
+        
+        .cart-modal-content {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 400px;
+            height: 100vh;
+            background-color: white;
+            box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            overflow-y: auto;
+            z-index: 1000;
+            display: none; /* Ẩn modal mặc định */
+        }
+        
+        .cart-modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .close-cart {
+            font-size: 24px;
+            cursor: pointer;
+        }
+        
+        #cart-items {
+            flex-grow: 1;
+            margin-bottom: 20px;
+        }
+        
+        .total {
+            font-size: 18px;
+            font-weight: bold;
+            text-align: right;
+            margin-bottom: 20px;
+        }
+        
+        .pay {
+            font-size: 20px;
+            color: white;
+            background-color: #4CAF50;
+            text-align: center;
+            padding: 15px 0;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+        
+        .clear-cart {
+            padding: 10px;
+            background-color: #f44336;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Shopping Cart Modal Example</h1>
+        
+        <!-- Danh sách sản phẩm -->
+        <div class="product-list">
+            <div class="product-item">
+                <h2>Product 1</h2>
+                <p>Price: $10</p>
+                <button class="add-to-cart" data-name="Product 1" data-price="10">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <h2>Product 2</h2>
+                <p>Price: $20</p>
+                <button class="add-to-cart" data-name="Product 2" data-price="20">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <h2>Product 3</h2>
+                <p>Price: $30</p>
+                <button class="add-to-cart" data-name="Product 3" data-price="30">Add to Cart</button>
+            </div>
+        </div>
+        
+        <!-- Nút mở giỏ hàng -->
+        <button onclick="openCart()">Mở Giỏ Hàng</button>
+        
+        <!-- Modal giỏ hàng -->
+        <div class="cart-modal-content">
+            <div class="cart-modal-header">
+                <h2>Giỏ hàng</h2>
+                <span class="close-cart" onclick="closeCart()">&times;</span>
+            </div>
+            <div id="cart-items"></div>
+            <p class="total">Total: <span id="total">0</span></p>
+            <p class="pay">Thanh toán</p>
+            <button class="clear-cart" onclick="clearCart()">Xóa giỏ hàng</button>
+        </div>
+    </div>
+    
+    <script>
+        // Mở modal giỏ hàng
+        function openCart() {
+            document.querySelector('.cart-modal-content').style.display = 'flex';
+        }
+
+        // Đóng modal giỏ hàng
+        function closeCart() {
+            document.querySelector('.cart-modal-content').style.display = 'none';
+        }
+
+        // Xóa giỏ hàng
+        function clearCart() {
+            document.getElementById('cart-items').innerHTML = '';
+            document.getElementById('total').textContent = '0';
+        }
+
+        // Thêm sản phẩm vào giỏ hàng
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', () => {
+                const productName = button.getAttribute('data-name');
+                const productPrice = parseFloat(button.getAttribute('data-price'));
+                const cartItems = document.getElementById('cart-items');
+                const totalElement = document.getElementById('total');
+
+                // Tạo phần tử li để hiển thị sản phẩm trong giỏ hàng
+                const cartItem = document.createElement('li');
+                cartItem.textContent = `${productName} - $${productPrice}`;
+                cartItems.appendChild(cartItem);
+
+                // Cập nhật tổng giá
+                const currentTotal = parseFloat(totalElement.textContent);
+                totalElement.textContent = (currentTotal + productPrice).toFixed(2);
+            });
+        });
+    </script>
+</body>
+</html>

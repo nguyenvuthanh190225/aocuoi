@@ -1,14 +1,22 @@
+/* Modal đăng nhập */
 .modal {
    display: none;
     position: fixed;
-    z-index: 1;
-    top: 0;
+    z-index: 11;
+    top: 73px;
     right: 0;
     left: 0;
     bottom: 0;
     cursor: pointer;
     background: #FFE4E1;
+    animation: tudat ease-in .5s;
   }
+.modal::before {
+    margin-top: -20px;
+    position: absolute;
+    content:"";
+    opacity: 1;
+}
 
   .modal__close {
     float:right;
@@ -60,7 +68,6 @@
  }
 
 .auth-form {
-    /* display: none;  */
     background-color: var(--while-color);
     border-radius: 5px;
     overflow: hidden;
@@ -188,9 +195,213 @@
 .regiter-signup a:last-child {
   margin-left: 5px;
 } 
+/* modal đăng nhập */
 
-/* modal */
-.card {
+
+/* modal card */
+.header-cart {
+  font-size: 20px;
+  color: #fff;
+  background-color: var(--primary-color);
+  border: none;
+  opacity: 1;
+}
+
+.header-cart:hover {
+opacity: 0.7;
+}
+
+.cart-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, .2);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center; 
+  animation: tudat ease-in .5s;
+}
+.cart-modal::before {
+  margin-top: 700px;
+  position: absolute;
+  content:"";
+  opacity: 1;
+}
+
+/* .cart-modal-content {
+  position: fixed;
+  top: 73px;
+  width: 400px;
+  right: 0;
+  height: 100vh;
+  background: linear-gradient(
+    to bottom left,
+    #a8a8e5cc 2%,    
+    #acaceab3 10%,      
+    #acacea80 25%,     
+    #ffc0cb4d 50%,    
+    #f5f5f500 100%       
+    );
+  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+  padding: 0 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  z-index: 1000;
+  cursor: pointer;
+  animation: headerNotifyGrowth ease-in 0.4s;
+  will-change: opacity, transform;
+  cursor:default;
+  transform-origin: 1400px top ;
+} */
+
+.cart-modal-content {
+  position: fixed;
+  top: 73px;
+  width: 400px;
+  right: 0;
+  height: 100vh;
+  background: linear-gradient(
+    to bottom left,
+    rgb(172, 172, 240) 2%,    
+    rgb(197, 197, 238) 8%,      
+    rgb(202, 202, 235) 15%,     
+    rgb(244, 202, 209) 23%,   
+    rgb(236, 219, 222) 40%,   
+    rgba(245, 245, 245, 1) 80%,      
+    rgba(245, 245, 245, 1) 100%       
+  );
+  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  z-index: 1000;
+  cursor: default;
+  animation: headerNotifyGrowth ease-in 0.4s;
+  will-change: opacity, transform;
+  transform-origin: right top;
+}
+
+
+.cart-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.close-cart {
+  float: right;
+  font-size: 26px;
+  top: 0;
+  right: 0;
+  color: red;
+  padding: 4px 8px;
+}
+
+#cart-items {
+  flex-grow: 1;
+  margin-bottom: 20px;
+}
+
+.total {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.pay {
+  font-size: 20px;
+  color: var(--while-color);
+  background-color: var(--primary-color);
+  text-align: center;
+  padding: 15px 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.clear-cart {
+  padding: 10px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+}
+
+
+.cart-modal-header h2 {
+  margin-top: 20px;
+  color: var(--primary-color);
+}
+
+.close-cart:hover {
+  background-color: #fc4a4a;
+  color: var(--while-color);
+  border-radius: 3px ;
+  transition: all .3s ease-in-out;
+
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.cart-item button {
+  font-size: 14px;
+  border-radius: 2px;
+  color: var(--while-color);
+  border: none;
+  background-color: var(--while-color);
+  height: 40px;
+  background-color: var(--primary-color);
+  padding: 0 5px;
+}
+
+.cart-item button:hover {
+  background-color: red;
+}
+
+.total {
+  color: var(--primary-color);
+  text-align: right;
+  font-weight: bold;
+}
+
+.clear-cart {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  width: 100%;
+  text-align: center;
+}
+
+.clear-cart:hover {
+  background-color: var(--primary-color);
+  color: var(--while-color);
+}
+
+.pay:hover {
+  background-color: var(--while-color);
+  color: var(--primary-color);
+  box-shadow: 0 0 15px 5px rgb(240, 142, 129, 0.7);
+} 
+/* modal card */
+.cardr {
   position: relative;
   width: 200px;
   height: 200px;
@@ -333,16 +544,16 @@
   transition-delay: 0.6s;
 }
 
-.card:hover {
+.cardr:hover {
   transform: scale(1.1);
 }
 
-.card:hover .box {
+.cardr:hover .box {
   bottom: -1px;
   left: -1px;
 }
 
-.card:hover .logo {
+.cardr:hover .logo {
   transform: translate(70px, -52px);
   letter-spacing: 0px;
 }
