@@ -578,13 +578,16 @@ photo */
 .footer-colum {
     display: flex;
 }
+
 .footer-gril-colum3 {
     width: calc( 100% / 3);
     padding: 20px 20px;
 }
-.footer-gril-colum3__footer {
-  float:right;
+
+.inputbox {
+  float: right;
 }
+
 .footer-address {
     display: flex;
     align-items: center;
