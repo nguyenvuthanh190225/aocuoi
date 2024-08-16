@@ -95,15 +95,6 @@ items.forEach(item => {
 
 
 
-function showContent(category, element) {
-    const contentArea = document.getElementById('content-area');
-    const productImage = document.getElementById('product-image');
-    const buttons = document.querySelectorAll('.tatcasanpham');
-    buttons.forEach(button => button.classList.remove('active'));
-
-    element.classList.add('active');
-}
-
 //Đăng nhập
 document.addEventListener('DOMContentLoaded', function() {
 var modal = document.getElementById('auth-modal');
@@ -155,62 +146,7 @@ var showLoginLink = document.getElementById('show-login');
 });
 // đăng nhập
 
-function changeColor(element) {
-    // Xóa class 'active' khỏi tất cả các liên kết
-    var links = document.querySelectorAll('.modal-size a');
-    links.forEach(function(link) {
-        link.classList.remove('active');
-    });
-
-    // Thêm class 'active' vào phần tử được nhấp
-    element.classList.add('active');
-}
-
-
-function changeMainImage(element) {
-    var mainImage = document.getElementById('mainImage');
-    mainImage.src = element.src; // Thay đổi hình ảnh chính thành hình ảnh của ảnh nhỏ được nhấp vào
-  }
-
-  function toggleImages() {
-    var anhphu = document.querySelector('.anhphu');
-    var button = document.querySelector('.toggle-button');
-    
-    // Toggle class 'show-all' for the .anhphu element
-    anhphu.classList.toggle('show-all');
-    
-    // Update button text based on current state
-    if (anhphu.classList.contains('show-all')) {
-      button.textContent = 'Show Less Images';
-    } else {
-      button.textContent = 'Show All Images';
-    }
-  }
-
-
-
-
-
-
-//   function openModalthongtinsp() {
-//     document.getElementById('productModalsp').style.display = 'block';
-//   }
-
-//   function closeModal() {
-//     document.getElementById('productModalsp').style.display = 'none';
-//   }
-
-//   function changeMainImage(image) {
-//     var mainImage = document.getElementById('mainImage');
-//     mainImage.src = image.src;
-//   }
-
-//   function changeColor(element) {
-//     var links = document.querySelectorAll('.sp-modal-size a');
-//     links.forEach(link => link.classList.remove('active'));
-//     element.classList.add('active');
-//   }
-
+// modal sp
 function openModalthongtinsp(modalId) {
     document.getElementById(modalId).style.display = 'block';
 }
@@ -231,6 +167,81 @@ function changeColor(element) {
 }
 
 
+// function showContent(id) {
+//     // Ẩn content-content khi nhấn nút
+//     document.querySelector('.content-content').style.display = 'none';
+//     document.querySelector('.content-gril').style.display = 'none';
+//     document.querySelector('.content-grils').style.display = 'none'
+    
+//     // Ẩn tất cả các phần tử với class 'content-mins'
+//     const allContents = document.querySelectorAll('.content-mins');
+//     allContents.forEach(content => {
+//         content.classList.remove('show');
+//     });
+
+//     // Hiển thị phần tử được chọn
+//     const selectedContent = document.getElementById(id);
+//     selectedContent.classList.add('show');
+// }
+
+// function toggleContentmin(element) {
+//     // Ẩn phần tử hiện tại khi click
+//     element.classList.remove('show');
+// }
+
+// function showContentmin() {
+//     // Hiển thị lại content-content và ẩn tất cả các content-mins
+//     document.querySelector('.content-content').style.display = 'block';
+//     document.querySelector('.content-gril').style.display = 'block';
+//     document.querySelector('.content-grils').style.display = 'block'
 
 
 
+//     const allContents = document.querySelectorAll('.content-mins');
+//     allContents.forEach(content => {
+//         content.classList.remove('show');
+//     });
+// }
+
+
+
+function showContent(id, button) {
+    // Ẩn các phần tử content-content, content-gril, content-grils
+    document.querySelector('.content-content').style.display = 'none';
+    document.querySelector('.content-gril').style.display = 'none';
+    document.querySelector('.content-grils').style.display = 'none';
+    
+    // Ẩn tất cả các phần tử với class 'content-mins'
+    const allContents = document.querySelectorAll('.content-mins');
+    allContents.forEach(content => {
+        content.classList.remove('show');
+    });
+
+    // Hiển thị phần tử được chọn
+    const selectedContent = document.getElementById(id);
+    selectedContent.classList.add('show');
+
+    // Xóa lớp 'active' khỏi tất cả các nút
+    const buttons = document.querySelectorAll('.tatcasanpham');
+    buttons.forEach(btn => btn.classList.remove('active'));
+
+    // Thêm lớp 'active' vào nút hiện tại
+    button.classList.add('active');
+}
+
+function toggleContentmin(element) {
+    // Ẩn phần tử hiện tại khi click
+    element.classList.remove('show');
+}
+
+function showContentmin() {
+    // Hiển thị lại content-content và ẩn tất cả các content-mins
+    document.querySelector('.content-content').style.display = 'block';
+    document.querySelector('.content-gril').style.display = 'block';
+    document.querySelector('.content-grils').style.display = 'block';
+
+    const allContents = document.querySelectorAll('.content-mins');
+    allContents.forEach(content => {
+        content.classList.remove('show');
+    });
+}
