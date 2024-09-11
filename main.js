@@ -167,75 +167,31 @@ function changeColor(element) {
 }
 
 
-// function showContent(id) {
-//     // Ẩn content-content khi nhấn nút
-//     document.querySelector('.content-content').style.display = 'none';
-//     document.querySelector('.content-gril').style.display = 'none';
-//     document.querySelector('.content-grils').style.display = 'none'
-    
-//     // Ẩn tất cả các phần tử với class 'content-mins'
-//     const allContents = document.querySelectorAll('.content-mins');
-//     allContents.forEach(content => {
-//         content.classList.remove('show');
-//     });
-
-//     // Hiển thị phần tử được chọn
-//     const selectedContent = document.getElementById(id);
-//     selectedContent.classList.add('show');
-// }
-
-// function toggleContentmin(element) {
-//     // Ẩn phần tử hiện tại khi click
-//     element.classList.remove('show');
-// }
-
-// function showContentmin() {
-//     // Hiển thị lại content-content và ẩn tất cả các content-mins
-//     document.querySelector('.content-content').style.display = 'block';
-//     document.querySelector('.content-gril').style.display = 'block';
-//     document.querySelector('.content-grils').style.display = 'block'
-
-
-
-//     const allContents = document.querySelectorAll('.content-mins');
-//     allContents.forEach(content => {
-//         content.classList.remove('show');
-//     });
-// }
-
-
 
 function showContent(id, button) {
-    // Ẩn các phần tử content-content, content-gril, content-grils
     document.querySelector('.content-content').style.display = 'none';
     document.querySelector('.content-gril').style.display = 'none';
     document.querySelector('.content-grils').style.display = 'none';
     
-    // Ẩn tất cả các phần tử với class 'content-mins'
     const allContents = document.querySelectorAll('.content-mins');
     allContents.forEach(content => {
         content.classList.remove('show');
     });
 
-    // Hiển thị phần tử được chọn
     const selectedContent = document.getElementById(id);
     selectedContent.classList.add('show');
 
-    // Xóa lớp 'active' khỏi tất cả các nút
     const buttons = document.querySelectorAll('.tatcasanpham');
     buttons.forEach(btn => btn.classList.remove('active'));
 
-    // Thêm lớp 'active' vào nút hiện tại
     button.classList.add('active');
 }
 
 function toggleContentmin(element) {
-    // Ẩn phần tử hiện tại khi click
     element.classList.remove('show');
 }
 
 function showContentmin() {
-    // Hiển thị lại content-content và ẩn tất cả các content-mins
     document.querySelector('.content-content').style.display = 'block';
     document.querySelector('.content-gril').style.display = 'block';
     document.querySelector('.content-grils').style.display = 'block';

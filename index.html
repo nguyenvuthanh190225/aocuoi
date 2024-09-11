@@ -11,14 +11,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="main.js">
     <link rel="stylesheet" href="modalproducts.css">
-    <link rel="stylesheet" href="thanhtoan.php">
 </head>
 <body>
     <div id="main">
         <div id="header">
             <div class="header-gril">
                 <div class="header-logo">
-                    <img src="//bizweb.dktcdn.net/100/445/694/themes/848484/assets/logo.png?1695302705094" alt="Meo Store">
+                    <a href="index.html"><img src="//bizweb.dktcdn.net/100/445/694/themes/848484/assets/logo.png?1695302705094" alt="Meo Store"></a>
+                    
                 </div>
                 <div href="" class="header-nabav">
                     <div class="header-nabav-item">
@@ -27,7 +27,7 @@
                         <a href="#" onclick="showContent('lace', this)">Đầm ren</a> 
                         <a href="#" onclick="showContent('wedding', this)">Áo dài</a>
                         <a href="#" onclick="showContent('colored', this)">Đầm màu</a>
-                        <a href="">Phụ kiện</a>
+                        <a href="#" onclick="showContent('accessory', this)">Phụ kiện</a>
                     </div>
                 </div>
                 <div class="header-login">
@@ -308,6 +308,7 @@
             <button class="tatcasanpham" onclick="showContent('lace', this)">Đầm ren</button>
             <button class="tatcasanpham" onclick="showContent('wedding', this)">Áo dài</button>
             <button class="tatcasanpham" onclick="showContent('colored', this)">Đầm màu</button>
+            <button class="tatcasanpham" onclick="showContent('accessory', this)">Phụ kiện</button>
         </div>
         <div class="content">
             <div class="content-gril">
@@ -391,7 +392,7 @@
                     <div class="content-gril__colum4">
                         <div class="content-gril__colum-img-content">
                             <div class="content-gril__colum-img" onclick="openModalthongtinsp('productModalsp1')">
-                                <img src="img/img/vay12.jpg" alt="" class="content-gril__colum4-img">
+                                <img src="img/img/váy cưới1.jpg" alt="" class="content-gril__colum4-img">
                             </div>
                             <p class="masanpham">DH04829</p>
                             <p class="gia">2.000.000Đ</p>
@@ -407,19 +408,17 @@
                         <div class="sp-modal-content__width">
                             <i class="sp-close-thongtinsp fa-solid fa-xmark" id="close" onclick="closeModal('productModalsp1')"></i>
                             <div class="sp-content-gril__colum-img-1">
-                                <a href="">Trang chủ</a>
+                                <a href="#">Trang chủ</a>
                                 <p>/</p>
-                                <a href="">Đầm ngắn</a>
-                                <p>/</p>
-                                <a href="">Sản phẩm</a>
+                                <a href="" style="color: var(--primary-color)">Sản phẩm</a>
                             </div>
                           <div class="sp-content-gril__colum-img">
                               <div class="sp-content-gril__colum-img-2">
-                                  <img id="mainImage" src="img/img/vay12.jpg" alt="" class="sp-content-gril__colum4-img">
+                                  <img id="mainImage" src="img/img/váy cưới1.jpg" alt="" class="sp-content-gril__colum4-img">
                                   <div class="anhphu">
-                                      <img src="img/img/vay12..jpg" alt="" class="sp-anhphu-img" onclick="changeMainImage(this)">
-                                      <img src="img/img/vay12...jpg" alt="" class="sp-anhphu-img" onclick="changeMainImage(this)">
-                                      <img src="img/img/vay12....jpg" alt="" class="sp-anhphu-img" onclick="changeMainImage(this)">
+                                      <img src="img/img/váy cưới1..jpg" alt="" class="sp-anhphu-img" onclick="changeMainImage(this)">
+                                      <img src="img/img/váy cưới1...jpg" alt="" class="sp-anhphu-img" onclick="changeMainImage(this)">
+                                      <img src="img/img/váy cưới1....jpg" alt="" class="sp-anhphu-img" onclick="changeMainImage(this)">
                                   </div>
                               </div>
                               <div class="sp-content-gril__colum-img-2">
@@ -570,7 +569,7 @@
                     <div class="content-gril__colum4"> 
                       <div class="content-gril__colum-img-content">
                           <div class="content-gril__colum-img" onclick="openModalthongtinsp('productModalsp2')">
-                              <img src="img/img/vay10.jpg" alt="" class="content-gril__colum4-img">
+                              <img src="img/img/váy cưới 2.jpg" alt="" class="content-gril__colum4-img">
                           </div>
                           <p class="masanpham">DH04403</p>
                           <p class="gia">3.000.000Đ</p>
@@ -588,17 +587,15 @@
                             <div class="sp-content-gril__colum-img-1">
                                 <a href="">Trang chủ</a>
                                 <p>/</p>
-                                <a href="">Đầm ngắn</a>
-                                <p>/</p>
-                                <a href="">Sản phẩm</a>
+                                <a href="" style="color: var(--primary-color)">Sản phẩm</a>
                             </div>
                           <div class="sp-content-gril__colum-img">
                               <div class="sp-content-gril__colum-img-2">
-                                  <img id="mainImage" src="img/img/vay10.jpg" alt="" class="sp-content-gril__colum4-img">
+                                  <img id="mainImage" src="img/img/váy cưới 2.jpg" alt="" class="sp-content-gril__colum4-img">
                                   <div class="anhphu">
-                                      <img src="img/img/vay10..jpg" alt="" class="sp-anhphu-img" onclick="changeMainImage(this)">
-                                      <img src="img/img/vay10...jpg" alt="" class="sp-anhphu-img" onclick="changeMainImage(this)">
-                                      <img src="img/img/vay10....jpg" alt="" class="sp-anhphu-img" onclick="changeMainImage(this)">
+                                      <img src="img/img/váy cưới 2..jpg" alt="" class="sp-anhphu-img" onclick="changeMainImage(this)">
+                                      <img src="img/img/váy cưới 2...jpg" alt="" class="sp-anhphu-img" onclick="changeMainImage(this)">
+                                      <img src="img/img/váy cưới 2....jpg" alt="" class="sp-anhphu-img" onclick="changeMainImage(this)">
                                   </div>
                               </div>
                               <div class="sp-content-gril__colum-img-2">
@@ -766,9 +763,7 @@
                             <div class="sp-content-gril__colum-img-1">
                                 <a href="">Trang chủ</a>
                                 <p>/</p>
-                                <a href="">Đầm ngắn</a>
-                                <p>/</p>
-                                <a href="">Sản phẩm</a>
+                                <a href="" style="color: var(--primary-color)">Sản phẩm</a>
                             </div>
                           <div class="sp-content-gril__colum-img">
                               <div class="sp-content-gril__colum-img-2">
@@ -944,9 +939,7 @@
                             <div class="sp-content-gril__colum-img-1">
                                 <a href="">Trang chủ</a>
                                 <p>/</p>
-                                <a href="">Đầm ngắn</a>
-                                <p>/</p>
-                                <a href="">Sản phẩm</a>
+                                <a href="" style="color: var(--primary-color)">Sản phẩm</a>
                             </div>
                           <div class="sp-content-gril__colum-img">
                               <div class="sp-content-gril__colum-img-2">
@@ -1123,9 +1116,7 @@
                             <div class="sp-content-gril__colum-img-1">
                                 <a href="">Trang chủ</a>
                                 <p>/</p>
-                                <a href="">Đầm ngắn</a>
-                                <p>/</p>
-                                <a href="">Sản phẩm</a>
+                                <a href="" style="color: var(--primary-color)">Sản phẩm</a>
                             </div>
                           <div class="sp-content-gril__colum-img">
                               <div class="sp-content-gril__colum-img-2">
@@ -1283,7 +1274,7 @@
                     <div class="content-gril__colum4">
                       <div class="content-gril__colum-img-content">
                           <div class="content-gril__colum-img" onclick="openModalthongtinsp('productModalsp6')">
-                              <img src="img/img/vay7.jpg" alt="" class="content-gril__colum4-img">
+                              <img src="img/img/váy cưới 7..jpg" alt="" class="content-gril__colum4-img">
                           </div>
                           <p class="masanpham">BN39303</p>
                           <p class="gia">2.000.000Đ</p>
@@ -1301,17 +1292,15 @@
                             <div class="sp-content-gril__colum-img-1">
                                 <a href="">Trang chủ</a>
                                 <p>/</p>
-                                <a href="">Đầm ngắn</a>
-                                <p>/</p>
-                                <a href="">Sản phẩm</a>
+                                <a href="" style="color: var(--primary-color)">Sản phẩm</a>
                             </div>
                           <div class="sp-content-gril__colum-img">
                               <div class="sp-content-gril__colum-img-2">
-                                  <img id="mainImage" src="img/img/vay7.jpg" alt="" class="sp-content-gril__colum4-img">
+                                  <img id="mainImage" src="img/img/váy cưới 7.webp" alt="" class="sp-content-gril__colum4-img">
                                   <div class="anhphu">
-                                      <img src="img/img/vay7..jpg" alt="" class="sp-anhphu-img" onclick="changeMainImage(this)">
-                                      <img src="img/img/vay7...jpg" alt="" class="sp-anhphu-img" onclick="changeMainImage(this)">
-                                      <img src="img/img/vay7....jpg" alt="" class="sp-anhphu-img" onclick="changeMainImage(this)">
+                                      <img src="img/img/váy cưới 7..jpg" alt="" class="sp-anhphu-img" onclick="changeMainImage(this)">
+                                      <img src="img/img/váy cưới 7...webp" alt="" class="sp-anhphu-img" onclick="changeMainImage(this)">
+                                      <img src="img/img/váy cưới 7....webp" alt="" class="sp-anhphu-img" onclick="changeMainImage(this)">
                                   </div>
                               </div>
                               <div class="sp-content-gril__colum-img-2">
@@ -1479,9 +1468,7 @@
                             <div class="sp-content-gril__colum-img-1">
                                 <a href="">Trang chủ</a>
                                 <p>/</p>
-                                <a href="">Đầm ngắn</a>
-                                <p>/</p>
-                                <a href="">Sản phẩm</a>
+                                <a href="" style="color: var(--primary-color)">Sản phẩm</a>
                             </div>
                           <div class="sp-content-gril__colum-img">
                               <div class="sp-content-gril__colum-img-2">
@@ -1657,9 +1644,7 @@
                             <div class="sp-content-gril__colum-img-1">
                                 <a href="">Trang chủ</a>
                                 <p>/</p>
-                                <a href="">Đầm ngắn</a>
-                                <p>/</p>
-                                <a href="">Sản phẩm</a>
+                                <a href="" style="color: var(--primary-color)">Sản phẩm</a>
                             </div>
                           <div class="sp-content-gril__colum-img">
                               <div class="sp-content-gril__colum-img-2">
@@ -1818,7 +1803,7 @@
                     <div class="content-gril__colum4">
                       <div class="content-gril__colum-img-content">
                           <div class="content-gril__colum-img" onclick="openModalthongtinsp('productModalsp9')">
-                              <img src="img/img/aodai9.webp" alt="" class="content-gril__colum4-img">
+                              <img src="img/img/váy cưới 9.avif" alt="" class="content-gril__colum4-img">
                           </div>
                           <p class="masanpham">AA1111</p>
                           <p class="gia">1.200.000Đ</p>
@@ -1836,17 +1821,15 @@
                             <div class="sp-content-gril__colum-img-1">
                                 <a href="">Trang chủ</a>
                                 <p>/</p>
-                                <a href="">Đầm ngắn</a>
-                                <p>/</p>
-                                <a href="">Sản phẩm</a>
+                                <a href="" style="color: var(--primary-color)">Sản phẩm</a>
                             </div>
                           <div class="sp-content-gril__colum-img">
                               <div class="sp-content-gril__colum-img-2">
-                                  <img id="mainImage" src="img/img/aodai9.webp" alt="" class="sp-content-gril__colum4-img">
+                                  <img id="mainImage" src="img/img/váy cưới 9.avif" alt="" class="sp-content-gril__colum4-img">
                                   <div class="anhphu">
-                                      <img src="img/img/aodai9..webp" alt="" class="sp-anhphu-img" onclick="changeMainImage(this)">
-                                      <img src="img/img/aodai9...webp" alt="" class="sp-anhphu-img" onclick="changeMainImage(this)">
-                                      <img src="img/img/aodai9....webp" alt="" class="sp-anhphu-img" onclick="changeMainImage(this)">
+                                      <img src="img/img/váy cưới 9..avif" alt="" class="sp-anhphu-img" onclick="changeMainImage(this)">
+                                      <img src="img/img/váy cưới 9...avif" alt="" class="sp-anhphu-img" onclick="changeMainImage(this)">
+                                      <img src="img/img/váy cưới 9....avif" alt="" class="sp-anhphu-img" onclick="changeMainImage(this)">
                                   </div>
                               </div>
                               <div class="sp-content-gril__colum-img-2">
@@ -2014,9 +1997,7 @@
                             <div class="sp-content-gril__colum-img-1">
                                 <a href="">Trang chủ</a>
                                 <p>/</p>
-                                <a href="">Đầm ngắn</a>
-                                <p>/</p>
-                                <a href="">Sản phẩm</a>
+                                <a href="" style="color: var(--primary-color)">Sản phẩm</a>
                             </div>
                           <div class="sp-content-gril__colum-img">
                               <div class="sp-content-gril__colum-img-2">
@@ -2192,9 +2173,7 @@
                             <div class="sp-content-gril__colum-img-1">
                                 <a href="">Trang chủ</a>
                                 <p>/</p>
-                                <a href="">Đầm ngắn</a>
-                                <p>/</p>
-                                <a href="">Sản phẩm</a>
+                                <a href="" style="color: var(--primary-color)">Sản phẩm</a>
                             </div>
                           <div class="sp-content-gril__colum-img">
                               <div class="sp-content-gril__colum-img-2">
@@ -2370,9 +2349,7 @@
                             <div class="sp-content-gril__colum-img-1">
                                 <a href="">Trang chủ</a>
                                 <p>/</p>
-                                <a href="">Đầm ngắn</a>
-                                <p>/</p>
-                                <a href="">Sản phẩm</a>
+                                <a href="" style="color: var(--primary-color)">Sản phẩm</a>
                             </div>
                           <div class="sp-content-gril__colum-img">
                               <div class="sp-content-gril__colum-img-2">
@@ -2547,7 +2524,7 @@
                             <div class="content-gril__colum4">
                                 <div class="content-gril__colum-img-content">
                                     <div class="content-gril__colum-img" onclick="openModalthongtinsp('productModalspdn1')">
-                                        <img src="img/img/damngan1.webp" alt="" class="content-gril__colum4-img">
+                                        <img src="img/img/damngan2.webp" alt="" class="content-gril__colum4-img">
                                     </div>
                                     <p class="masanpham">AD0000</p>
                                     <p class="gia">2.500.000Đ</p>
@@ -2571,11 +2548,11 @@
                                     </div>
                                 <div class="sp-content-gril__colum-img">
                                     <div class="sp-content-gril__colum-img-2">
-                                        <img id="mainImage" src="img/img/damngan1.webp" alt="" class="sp-content-gril__colum4-img">
+                                        <img id="mainImage" src="img/img/damngan2.webp" alt="" class="sp-content-gril__colum4-img">
                                         <div class="anhphu">
-                                            <img src="img/img/damngan1..webp" alt="" class="sp-anhphu-img" onclick="changeMainImage(this)">
-                                            <img src="img/img/damngan1...webp" alt="" class="sp-anhphu-img" onclick="changeMainImage(this)">
-                                            <img src="img/img/damngan1....webp" alt="" class="sp-anhphu-img" onclick="changeMainImage(this)">
+                                            <img src="img/img/damngan2..webp" alt="" class="sp-anhphu-img" onclick="changeMainImage(this)">
+                                            <img src="img/img/damngan2...webp" alt="" class="sp-anhphu-img" onclick="changeMainImage(this)">
+                                            <img src="img/img/damngan2....webp" alt="" class="sp-anhphu-img" onclick="changeMainImage(this)">
                                         </div>
                                     </div>
                                     <div class="sp-content-gril__colum-img-2">
@@ -4014,7 +3991,7 @@
                                     <div class="sp-content-gril__colum-img-1">
                                         <a href="">Trang chủ</a>
                                         <p>/</p>
-                                        <a href="">Đầm ngắn</a>
+                                        <a href="">Đầm dài</a>
                                         <p>/</p>
                                         <a href="">Sản phẩm</a>
                                     </div>
@@ -4193,7 +4170,7 @@
                                     <div class="sp-content-gril__colum-img-1">
                                         <a href="">Trang chủ</a>
                                         <p>/</p>
-                                        <a href="">Đầm ngắn</a>
+                                        <a href="">Đầm dài</a>
                                         <p>/</p>
                                         <a href="">Sản phẩm</a>
                                     </div>
@@ -4372,7 +4349,7 @@
                                     <div class="sp-content-gril__colum-img-1">
                                         <a href="">Trang chủ</a>
                                         <p>/</p>
-                                        <a href="">Đầm ngắn</a>
+                                        <a href="">Đầm dài</a>
                                         <p>/</p>
                                         <a href="">Sản phẩm</a>
                                     </div>
@@ -4551,7 +4528,7 @@
                                     <div class="sp-content-gril__colum-img-1">
                                         <a href="">Trang chủ</a>
                                         <p>/</p>
-                                        <a href="">Đầm ngắn</a>
+                                        <a href="">Đầm dài</a>
                                         <p>/</p>
                                         <a href="">Sản phẩm</a>
                                     </div>
@@ -4730,7 +4707,7 @@
                                     <div class="sp-content-gril__colum-img-1">
                                         <a href="">Trang chủ</a>
                                         <p>/</p>
-                                        <a href="">Đầm ngắn</a>
+                                        <a href="">Đầm dài</a>
                                         <p>/</p>
                                         <a href="">Sản phẩm</a>
                                     </div>
@@ -4909,7 +4886,7 @@
                                     <div class="sp-content-gril__colum-img-1">
                                         <a href="">Trang chủ</a>
                                         <p>/</p>
-                                        <a href="">Đầm ngắn</a>
+                                        <a href="">Đầm dài</a>
                                         <p>/</p>
                                         <a href="">Sản phẩm</a>
                                     </div>
@@ -5088,7 +5065,7 @@
                                     <div class="sp-content-gril__colum-img-1">
                                         <a href="">Trang chủ</a>
                                         <p>/</p>
-                                        <a href="">Đầm ngắn</a>
+                                        <a href="">Đầm dài</a>
                                         <p>/</p>
                                         <a href="">Sản phẩm</a>
                                     </div>
@@ -5267,7 +5244,7 @@
                                     <div class="sp-content-gril__colum-img-1">
                                         <a href="">Trang chủ</a>
                                         <p>/</p>
-                                        <a href="">Đầm ngắn</a>
+                                        <a href="">Đầm dài</a>
                                         <p>/</p>
                                         <a href="">Sản phẩm</a>
                                     </div>
@@ -5463,7 +5440,7 @@
                                     <div class="sp-content-gril__colum-img-1">
                                         <a href="">Trang chủ</a>
                                         <p>/</p>
-                                        <a href="">Đầm ngắn</a>
+                                        <a href="">Đầm ren</a>
                                         <p>/</p>
                                         <a href="">Sản phẩm</a>
                                     </div>
@@ -5642,7 +5619,7 @@
                                     <div class="sp-content-gril__colum-img-1">
                                         <a href="">Trang chủ</a>
                                         <p>/</p>
-                                        <a href="">Đầm ngắn</a>
+                                        <a href="">Đầm ren</a>
                                         <p>/</p>
                                         <a href="">Sản phẩm</a>
                                     </div>
@@ -5821,7 +5798,7 @@
                                     <div class="sp-content-gril__colum-img-1">
                                         <a href="">Trang chủ</a>
                                         <p>/</p>
-                                        <a href="">Đầm ngắn</a>
+                                        <a href="">Đầm ren</a>
                                         <p>/</p>
                                         <a href="">Sản phẩm</a>
                                     </div>
@@ -6000,7 +5977,7 @@
                                     <div class="sp-content-gril__colum-img-1">
                                         <a href="">Trang chủ</a>
                                         <p>/</p>
-                                        <a href="">Đầm ngắn</a>
+                                        <a href="">Đầm ren</a>
                                         <p>/</p>
                                         <a href="">Sản phẩm</a>
                                     </div>
@@ -6179,7 +6156,7 @@
                                     <div class="sp-content-gril__colum-img-1">
                                         <a href="">Trang chủ</a>
                                         <p>/</p>
-                                        <a href="">Đầm ngắn</a>
+                                        <a href="">Đầm ren</a>
                                         <p>/</p>
                                         <a href="">Sản phẩm</a>
                                     </div>
@@ -6358,7 +6335,7 @@
                                     <div class="sp-content-gril__colum-img-1">
                                         <a href="">Trang chủ</a>
                                         <p>/</p>
-                                        <a href="">Đầm ngắn</a>
+                                        <a href="">Đầm ren</a>
                                         <p>/</p>
                                         <a href="">Sản phẩm</a>
                                     </div>
@@ -6537,7 +6514,7 @@
                                     <div class="sp-content-gril__colum-img-1">
                                         <a href="">Trang chủ</a>
                                         <p>/</p>
-                                        <a href="">Đầm ngắn</a>
+                                        <a href="">Đầm ren</a>
                                         <p>/</p>
                                         <a href="">Sản phẩm</a>
                                     </div>
@@ -6716,7 +6693,7 @@
                                     <div class="sp-content-gril__colum-img-1">
                                         <a href="">Trang chủ</a>
                                         <p>/</p>
-                                        <a href="">Đầm ngắn</a>
+                                        <a href="">Đầm ren</a>
                                         <p>/</p>
                                         <a href="">Sản phẩm</a>
                                     </div>
@@ -6912,7 +6889,7 @@
                                     <div class="sp-content-gril__colum-img-1">
                                         <a href="">Trang chủ</a>
                                         <p>/</p>
-                                        <a href="">Đầm ngắn</a>
+                                        <a href="">Áo dài</a>
                                         <p>/</p>
                                         <a href="">Sản phẩm</a>
                                     </div>
@@ -7091,7 +7068,7 @@
                                     <div class="sp-content-gril__colum-img-1">
                                         <a href="">Trang chủ</a>
                                         <p>/</p>
-                                        <a href="">Đầm ngắn</a>
+                                        <a href="">Áo dài</a>
                                         <p>/</p>
                                         <a href="">Sản phẩm</a>
                                     </div>
@@ -7270,7 +7247,7 @@
                                     <div class="sp-content-gril__colum-img-1">
                                         <a href="">Trang chủ</a>
                                         <p>/</p>
-                                        <a href="">Đầm ngắn</a>
+                                        <a href="">Áo dài</a>
                                         <p>/</p>
                                         <a href="">Sản phẩm</a>
                                     </div>
@@ -7449,7 +7426,7 @@
                                     <div class="sp-content-gril__colum-img-1">
                                         <a href="">Trang chủ</a>
                                         <p>/</p>
-                                        <a href="">Đầm ngắn</a>
+                                        <a href="">Áo dài</a>
                                         <p>/</p>
                                         <a href="">Sản phẩm</a>
                                     </div>
@@ -7628,7 +7605,7 @@
                                     <div class="sp-content-gril__colum-img-1">
                                         <a href="">Trang chủ</a>
                                         <p>/</p>
-                                        <a href="">Đầm ngắn</a>
+                                        <a href="">Áo dài</a>
                                         <p>/</p>
                                         <a href="">Sản phẩm</a>
                                     </div>
@@ -7807,7 +7784,7 @@
                                     <div class="sp-content-gril__colum-img-1">
                                         <a href="">Trang chủ</a>
                                         <p>/</p>
-                                        <a href="">Đầm ngắn</a>
+                                        <a href="">Áo dài</a>
                                         <p>/</p>
                                         <a href="">Sản phẩm</a>
                                     </div>
@@ -7986,7 +7963,7 @@
                                     <div class="sp-content-gril__colum-img-1">
                                         <a href="">Trang chủ</a>
                                         <p>/</p>
-                                        <a href="">Đầm ngắn</a>
+                                        <a href="">Áo dài</a>
                                         <p>/</p>
                                         <a href="">Sản phẩm</a>
                                     </div>
@@ -8165,7 +8142,7 @@
                                     <div class="sp-content-gril__colum-img-1">
                                         <a href="">Trang chủ</a>
                                         <p>/</p>
-                                        <a href="">Đầm ngắn</a>
+                                        <a href="">Áo dài</a>
                                         <p>/</p>
                                         <a href="">Sản phẩm</a>
                                     </div>
@@ -8361,7 +8338,7 @@
                                     <div class="sp-content-gril__colum-img-1">
                                         <a href="">Trang chủ</a>
                                         <p>/</p>
-                                        <a href="">Đầm ngắn</a>
+                                        <a href="">Đầm màu</a>
                                         <p>/</p>
                                         <a href="">Sản phẩm</a>
                                     </div>
@@ -8540,7 +8517,7 @@
                                     <div class="sp-content-gril__colum-img-1">
                                         <a href="">Trang chủ</a>
                                         <p>/</p>
-                                        <a href="">Đầm ngắn</a>
+                                        <a href="">Đầm màu</a>
                                         <p>/</p>
                                         <a href="">Sản phẩm</a>
                                     </div>
@@ -8719,7 +8696,7 @@
                                     <div class="sp-content-gril__colum-img-1">
                                         <a href="">Trang chủ</a>
                                         <p>/</p>
-                                        <a href="">Đầm ngắn</a>
+                                        <a href="">Đầm màu</a>
                                         <p>/</p>
                                         <a href="">Sản phẩm</a>
                                     </div>
@@ -8898,7 +8875,7 @@
                                     <div class="sp-content-gril__colum-img-1">
                                         <a href="">Trang chủ</a>
                                         <p>/</p>
-                                        <a href="">Đầm ngắn</a>
+                                        <a href="">Đầm màu</a>
                                         <p>/</p>
                                         <a href="">Sản phẩm</a>
                                     </div>
@@ -9077,7 +9054,7 @@
                                     <div class="sp-content-gril__colum-img-1">
                                         <a href="">Trang chủ</a>
                                         <p>/</p>
-                                        <a href="">Đầm ngắn</a>
+                                        <a href="">Đầm màu</a>
                                         <p>/</p>
                                         <a href="">Sản phẩm</a>
                                     </div>
@@ -9256,7 +9233,7 @@
                                     <div class="sp-content-gril__colum-img-1">
                                         <a href="">Trang chủ</a>
                                         <p>/</p>
-                                        <a href="">Đầm ngắn</a>
+                                        <a href="">Đầm màu</a>
                                         <p>/</p>
                                         <a href="">Sản phẩm</a>
                                     </div>
@@ -9435,7 +9412,7 @@
                                     <div class="sp-content-gril__colum-img-1">
                                         <a href="">Trang chủ</a>
                                         <p>/</p>
-                                        <a href="">Đầm ngắn</a>
+                                        <a href="">Đầm màu</a>
                                         <p>/</p>
                                         <a href="">Sản phẩm</a>
                                     </div>
@@ -9614,7 +9591,7 @@
                                     <div class="sp-content-gril__colum-img-1">
                                         <a href="">Trang chủ</a>
                                         <p>/</p>
-                                        <a href="">Đầm ngắn</a>
+                                        <a href="">Đầm màu</a>
                                         <p>/</p>
                                         <a href="">Sản phẩm</a>
                                     </div>
@@ -9775,6 +9752,1454 @@
                     </div>
                 </div>
             </div>
+
+            <div id="accessory" class="content-mins" onclick="toggleContentmin()">
+                <div class="content-gril__min">
+                    <div class="content-products-min">
+                        <ul class="content-heading-min">
+                            <li class="content-heading__blog-min content-heading__home" onclick="showContentmin()">Trang chủ</li>
+                            <li class="content-heading__blog-min">/</li>
+                            <li class="content-heading__blog-min content-heading__blog-color-min">Đầm màu</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content-min">
+                    <div class="content-content">
+                        <div class="content-gril__colums">
+                            <div class="content-gril__colum4">
+                                <div class="content-gril__colum-img-content">
+                                    <div class="content-gril__colum-img" onclick="openModalthongtinsp('productModalsppk1')">
+                                        <img src="img/img/phukien1.webp" alt="" class="content-gril__colum4-img">
+                                    </div>
+                                    <p class="masanpham">AD0000</p>
+                                    <p class="gia">2.500.000Đ</p>
+                                    <div class="titkec">
+                                        <p onclick="addToCart(this)">To add cart</p>
+                                        <div></div>
+                                        <p>Buy</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- modal -->
+                            <div class="sp-modal-content__img" id="productModalsppk1">
+                                <div class="sp-modal-content__width">
+                                    <i class="sp-close-thongtinsp fa-solid fa-xmark" id="close" onclick="closeModal('productModalsppk1')"></i>
+                                    <div class="sp-content-gril__colum-img-1">
+                                        <a href="">Trang chủ</a>
+                                        <p>/</p>
+                                        <a href="">Đầm màu</a>
+                                        <p>/</p>
+                                        <a href="">Sản phẩm</a>
+                                    </div>
+                                <div class="sp-content-gril__colum-img">
+                                    <div class="sp-content-gril__colum-img-2">
+                                        <img id="mainImage" src="img/img/phukien1.webp" alt="" class="sp-content-gril__colum4-img">
+                                        <div class="anhphu">
+                                            <img src="img/img/phukien1.webp" alt="" class="sp-anhphu-img" onclick="changeMainImage(this)">
+                                            <img src="" alt="" class="sp-anhphu-img" onclick="changeMainImage(this)">
+                                            <img src="" alt="" class="sp-anhphu-img" onclick="changeMainImage(this)">
+                                        </div>
+                                    </div>
+                                    <div class="sp-content-gril__colum-img-2">
+                                        <p class="sp-modal-masanpham">DH0000</p>
+                                        <p class="sp-modal-gia">2.500.000Đ<a href="">Mua ngay</a></p>
+                                        <div class="sp-modal-size">
+                                            <a href="#" onclick="changeColor(this)">XS</a>
+                                            <a href="#" onclick="changeColor(this)">S</a>
+                                            <a href="#" onclick="changeColor(this)">M</a>
+                                            <a href="#" onclick="changeColor(this)">L</a>
+                                            <a href="#" onclick="changeColor(this)">XL</a>
+                                        </div>
+                                        <div class="sp-gachngang"></div>
+                                        <div class="sp-modal-thuonghieu">
+                                            Thương hiệu: 
+                                            <p>Meo store</p>
+                                            Xuất xứ:
+                                            <p>Việt Nam</p>
+                                        </div>
+                                        <div class="sp-gachngang"></div>
+                                        <div class="sp-modal-giaohang">
+                                            <img src="//bizweb.dktcdn.net/100/445/694/themes/848484/assets/icon_service_product_1.svg?1695302705094" alt="Giao hàng toàn quốc">
+                                            <p>Giao toàn quốc</p>
+                                        </div>
+                                        <div class="sp-gachngang"></div>
+                                        <div class="sp-modal-star">
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <div class="sp-gachngang"></div>
+                                        <div class="sp-thongtinsp">
+                                            <div class="sp-thongtin-header">𝑫𝒓𝒆𝒔𝒔 𝒃𝒚 𝑴𝒆𝒐</div>
+                                            <div>Thông tin sản phẩm</div>
+                                            <div>Dress code: DH04403</div>
+                                            <div  class="sp-thongtin-displayflex">Color<p>White</p></div>
+                                            <div class="sp-thongtin-displayflex">Hình ảnh được sản xuất độc quyền bởi<p class="thongtin-header">𝐌𝐄𝐎 𝐒𝐓𝐎𝐑𝐄</p></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer">
+                                    <div class="gril">
+                                        <div class="gril-colum">
+                                            <div class="footer-gril-colum3">
+                                                <div class="footer-gril-colum3__footer">
+                                                    <h2 class="footer-h2">Về chúng tui</h2>
+                                                    <div class="footer-address">
+                                                        <i class="fa-solid fa-location-dot"></i>
+                                                        <span>489A/4A Huỳnh Văn Bánh, Phường 13, Quận Phú Nhuận, TP. Hồ Chí Minh</span>
+                                                    </div>
+                                                    <div class="footer-address">
+                                                        <i class="fa-regular fa-clock"></i>
+                                                        <span>Giờ làm việc: Từ 10h00 đến 21h00 các ngày trong tuần từ Thứ 2 đến Chủ nhật</span>
+                                                    </div>
+                                                    <div class="footer-address">
+                                                        <i class="fa-solid fa-phone"></i>
+                                                        <span>Hotline:</span>
+                                                        <a href="">0914975952</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="footer-gril-colum3">
+                                                <div class="footer-help-colum3__footer footer-help-colum3__footer-imgh2">
+                                                    <img src="//bizweb.dktcdn.net/100/445/694/themes/848484/assets/logo.png?1695302705094" alt="">
+                                                    <p>"Sự hài lòng của quý khách là ưu tiên hàng đầu của chúng tôi. Chúng tôi đảm bảo các sản
+                                                        phẩm được sản xuất với độ chính xác và sự chăm chút cao nhất để đáp ứng tiêu chuẩn chất lượng cao."</p>
+                                                </div>
+                                            </div>
+                                            <div class="footer-gril-colum3">
+                                                <div class="footer-help-colum3__footer">
+                                                    <h2 class="footer-h2">Fanpage</h2>
+                                                    <img src="img/Screenshot 2024-08-11 123907.png" alt="" class="footer-fanpage">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="gril-colum">
+                                            <div class="footer-gril-colum3">
+                                                <div class="footer-gril-colum3__footer">
+                                                    <div class="footer-social">
+                                                        <h2 class="footer-h2">Kết nối với chúng tui</h2>
+                                                        <div class="socials-container">
+                                                            <a href="#" class="social twitter">
+                                                                <svg height="1em" viewBox="0 0 512 512">
+                                                                <path
+                                                                    d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                                                                ></path>
+                                                                </svg>
+                                                            </a>
+                            
+                                                            <a href="#" class="social facebook"
+                                                                ><svg height="1em" viewBox="0 0 320 512">
+                                                                <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+                                                                </path></svg>
+                                                            </a>
+                            
+                                                            <a href="#" class="social google-plus">
+                                                                <svg height="1em" viewBox="0 0 640 512">
+                                                                <path
+                                                                    d="M386.061 228.496c1.834 9.692 3.143 19.384 3.143 31.956C389.204 370.205 315.599 448 204.8 448c-106.084 0-192-85.915-192-192s85.916-192 192-192c51.864 0 95.083 18.859 128.611 50.292l-52.126 50.03c-14.145-13.621-39.028-29.599-76.485-29.599-65.484 0-118.92 54.221-118.92 121.277 0 67.056 53.436 121.277 118.92 121.277 75.961 0 104.513-54.745 108.965-82.773H204.8v-66.009h181.261zm185.406 6.437V179.2h-56.001v55.733h-55.733v56.001h55.733v55.733h56.001v-55.733H627.2v-56.001h-55.733z"
+                                                                ></path>
+                                                                </svg>
+                                                            </a>
+                            
+                                                            <a href="#" class="social instagram"
+                                                                ><svg height="1em" viewBox="0 0 448 512">
+                                                                <path
+                                                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                            
+                                                                </path>
+                                                                </svg>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="footer-gril-colum3">
+                                                <div class="footer-gril-colum3__footer">
+                                                    <div class="footer-social">
+                                                        <h2 class="footer-h2">Phương thức thanh toán</h2>
+                                                        <img src="//bizweb.dktcdn.net/100/283/016/themes/877652/assets/payment.png?1676254581506" alt="Payment" class="socials-container">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="footer-gril-colum3">
+                                                <div class="footer-gril-colum3__footer">
+                                                    <div class="footer-social">
+                                                        <h2 class="footer-h2">Trợ giúp</h2>
+                                                        <div class="footer-gril-colum3__footer-inputbox">
+                                                            <div class="inputbox">
+                                                                <input id="" required="required">
+                                                                <span>Nhập email...</span>
+                                                                <i></i>
+                                                            </div>
+                                                            <a href="" class="gui">Gửi</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div> 
+                            <!-- modal -->
+    
+                            <div class="content-gril__colum4">
+                                <div class="content-gril__colum-img-content">
+                                    <div class="content-gril__colum-img" onclick="openModalthongtinsp('productModalsppk2')">
+                                        <img src="img/img/phukien2.webp" alt="" class="content-gril__colum4-img">
+                                    </div>
+                                    <p class="masanpham">DH1111</p>
+                                    <p class="gia">3.000.000Đ</p>
+                                    <div class="titkec">
+                                        <p onclick="addToCart(this)">To add cart</p>
+                                        <div></div>
+                                        <p>Buy</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- modal -->
+                            <div class="sp-modal-content__img" id="productModalsppk2">
+                                <div class="sp-modal-content__width">
+                                    <i class="sp-close-thongtinsp fa-solid fa-xmark" id="close" onclick="closeModal('productModalsppk2')"></i>
+                                    <div class="sp-content-gril__colum-img-1">
+                                        <a href="">Trang chủ</a>
+                                        <p>/</p>
+                                        <a href="">Đầm màu</a>
+                                        <p>/</p>
+                                        <a href="">Sản phẩm</a>
+                                    </div>
+                                <div class="sp-content-gril__colum-img">
+                                    <div class="sp-content-gril__colum-img-2">
+                                        <img id="mainImage" src="img/img/phukien2.webp" alt="" class="sp-content-gril__colum4-img">
+                                        <div class="anhphu">
+                                            <img src="img/img/phukien2.webp" alt="" class="sp-anhphu-img" onclick="changeMainImage(this)">
+                                            <img src="" alt="" class="sp-anhphu-img" onclick="changeMainImage(this)">
+                                            <img src="" alt="" class="sp-anhphu-img" onclick="changeMainImage(this)">
+                                        </div>
+                                    </div>
+                                    <div class="sp-content-gril__colum-img-2">
+                                        <p class="sp-modal-masanpham">DH1111</p>
+                                        <p class="sp-modal-gia">3.000.000Đ<a href="">Mua ngay</a></p>
+                                        <div class="sp-modal-size">
+                                            <a href="#" onclick="changeColor(this)">XS</a>
+                                            <a href="#" onclick="changeColor(this)">S</a>
+                                            <a href="#" onclick="changeColor(this)">M</a>
+                                            <a href="#" onclick="changeColor(this)">L</a>
+                                            <a href="#" onclick="changeColor(this)">XL</a>
+                                        </div>
+                                        <div class="sp-gachngang"></div>
+                                        <div class="sp-modal-thuonghieu">
+                                            Thương hiệu: 
+                                            <p>Meo store</p>
+                                            Xuất xứ:
+                                            <p>Việt Nam</p>
+                                        </div>
+                                        <div class="sp-gachngang"></div>
+                                        <div class="sp-modal-giaohang">
+                                            <img src="//bizweb.dktcdn.net/100/445/694/themes/848484/assets/icon_service_product_1.svg?1695302705094" alt="Giao hàng toàn quốc">
+                                            <p>Giao toàn quốc</p>
+                                        </div>
+                                        <div class="sp-gachngang"></div>
+                                        <div class="sp-modal-star">
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <div class="sp-gachngang"></div>
+                                        <div class="sp-thongtinsp">
+                                            <div class="sp-thongtin-header">𝑫𝒓𝒆𝒔𝒔 𝒃𝒚 𝑴𝒆𝒐</div>
+                                            <div>Thông tin sản phẩm</div>
+                                            <div>Dress code: DH04403</div>
+                                            <div  class="sp-thongtin-displayflex">Color<p>White</p></div>
+                                            <div class="sp-thongtin-displayflex">Hình ảnh được sản xuất độc quyền bởi<p class="thongtin-header">𝐌𝐄𝐎 𝐒𝐓𝐎𝐑𝐄</p></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer">
+                                    <div class="gril">
+                                        <div class="gril-colum">
+                                            <div class="footer-gril-colum3">
+                                                <div class="footer-gril-colum3__footer">
+                                                    <h2 class="footer-h2">Về chúng tui</h2>
+                                                    <div class="footer-address">
+                                                        <i class="fa-solid fa-location-dot"></i>
+                                                        <span>489A/4A Huỳnh Văn Bánh, Phường 13, Quận Phú Nhuận, TP. Hồ Chí Minh</span>
+                                                    </div>
+                                                    <div class="footer-address">
+                                                        <i class="fa-regular fa-clock"></i>
+                                                        <span>Giờ làm việc: Từ 10h00 đến 21h00 các ngày trong tuần từ Thứ 2 đến Chủ nhật</span>
+                                                    </div>
+                                                    <div class="footer-address">
+                                                        <i class="fa-solid fa-phone"></i>
+                                                        <span>Hotline:</span>
+                                                        <a href="">0914975952</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="footer-gril-colum3">
+                                                <div class="footer-help-colum3__footer footer-help-colum3__footer-imgh2">
+                                                    <img src="//bizweb.dktcdn.net/100/445/694/themes/848484/assets/logo.png?1695302705094" alt="">
+                                                    <p>"Sự hài lòng của quý khách là ưu tiên hàng đầu của chúng tôi. Chúng tôi đảm bảo các sản
+                                                        phẩm được sản xuất với độ chính xác và sự chăm chút cao nhất để đáp ứng tiêu chuẩn chất lượng cao."</p>
+                                                </div>
+                                            </div>
+                                            <div class="footer-gril-colum3">
+                                                <div class="footer-help-colum3__footer">
+                                                    <h2 class="footer-h2">Fanpage</h2>
+                                                    <img src="img/Screenshot 2024-08-11 123907.png" alt="" class="footer-fanpage">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="gril-colum">
+                                            <div class="footer-gril-colum3">
+                                                <div class="footer-gril-colum3__footer">
+                                                    <div class="footer-social">
+                                                        <h2 class="footer-h2">Kết nối với chúng tui</h2>
+                                                        <div class="socials-container">
+                                                            <a href="#" class="social twitter">
+                                                                <svg height="1em" viewBox="0 0 512 512">
+                                                                <path
+                                                                    d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                                                                ></path>
+                                                                </svg>
+                                                            </a>
+                            
+                                                            <a href="#" class="social facebook"
+                                                                ><svg height="1em" viewBox="0 0 320 512">
+                                                                <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+                                                                </path></svg>
+                                                            </a>
+                            
+                                                            <a href="#" class="social google-plus">
+                                                                <svg height="1em" viewBox="0 0 640 512">
+                                                                <path
+                                                                    d="M386.061 228.496c1.834 9.692 3.143 19.384 3.143 31.956C389.204 370.205 315.599 448 204.8 448c-106.084 0-192-85.915-192-192s85.916-192 192-192c51.864 0 95.083 18.859 128.611 50.292l-52.126 50.03c-14.145-13.621-39.028-29.599-76.485-29.599-65.484 0-118.92 54.221-118.92 121.277 0 67.056 53.436 121.277 118.92 121.277 75.961 0 104.513-54.745 108.965-82.773H204.8v-66.009h181.261zm185.406 6.437V179.2h-56.001v55.733h-55.733v56.001h55.733v55.733h56.001v-55.733H627.2v-56.001h-55.733z"
+                                                                ></path>
+                                                                </svg>
+                                                            </a>
+                            
+                                                            <a href="#" class="social instagram"
+                                                                ><svg height="1em" viewBox="0 0 448 512">
+                                                                <path
+                                                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                            
+                                                                </path>
+                                                                </svg>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="footer-gril-colum3">
+                                                <div class="footer-gril-colum3__footer">
+                                                    <div class="footer-social">
+                                                        <h2 class="footer-h2">Phương thức thanh toán</h2>
+                                                        <img src="//bizweb.dktcdn.net/100/283/016/themes/877652/assets/payment.png?1676254581506" alt="Payment" class="socials-container">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="footer-gril-colum3">
+                                                <div class="footer-gril-colum3__footer">
+                                                    <div class="footer-social">
+                                                        <h2 class="footer-h2">Trợ giúp</h2>
+                                                        <div class="footer-gril-colum3__footer-inputbox">
+                                                            <div class="inputbox">
+                                                                <input id="" required="required">
+                                                                <span>Nhập email...</span>
+                                                                <i></i>
+                                                            </div>
+                                                            <a href="" class="gui">Gửi</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div> 
+                            <!-- modal -->
+        
+                            <div class="content-gril__colum4">
+                                <div class="content-gril__colum-img-content">
+                                    <div class="content-gril__colum-img" onclick="openModalthongtinsp('productModalsppk3')">
+                                        <img src="img/img/phukien3.webp" alt="" class="content-gril__colum4-img">
+                                    </div>
+                                    <p class="masanpham">AD2222</p>
+                                    <p class="gia">2.500.000Đ</p>
+                                    <div class="titkec">
+                                        <p onclick="addToCart(this)">To add cart</p>
+                                        <div></div>
+                                        <p>Buy</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- modal -->
+                            <div class="sp-modal-content__img" id="productModalsppk3">
+                                <div class="sp-modal-content__width">
+                                    <i class="sp-close-thongtinsp fa-solid fa-xmark" id="close" onclick="closeModal('productModalsppk3')"></i>
+                                    <div class="sp-content-gril__colum-img-1">
+                                        <a href="">Trang chủ</a>
+                                        <p>/</p>
+                                        <a href="">Đầm màu</a>
+                                        <p>/</p>
+                                        <a href="">Sản phẩm</a>
+                                    </div>
+                                <div class="sp-content-gril__colum-img">
+                                    <div class="sp-content-gril__colum-img-2">
+                                        <img id="mainImage" src="img/img/phukien3.webp" alt="" class="sp-content-gril__colum4-img">
+                                        <div class="anhphu">
+                                            <img src="img/img/phukien3.webp" alt="" class="sp-anhphu-img" onclick="changeMainImage(this)">
+                                            <img src="" alt="" class="sp-anhphu-img" onclick="changeMainImage(this)">
+                                            <img src="" alt="" class="sp-anhphu-img" onclick="changeMainImage(this)">
+                                        </div>
+                                    </div>
+                                    <div class="sp-content-gril__colum-img-2">
+                                        <p class="sp-modal-masanpham">AD2222</p>
+                                        <p class="sp-modal-gia">2.500.000Đ<a href="">Mua ngay</a></p>
+                                        <div class="sp-modal-size">
+                                            <a href="#" onclick="changeColor(this)">XS</a>
+                                            <a href="#" onclick="changeColor(this)">S</a>
+                                            <a href="#" onclick="changeColor(this)">M</a>
+                                            <a href="#" onclick="changeColor(this)">L</a>
+                                            <a href="#" onclick="changeColor(this)">XL</a>
+                                        </div>
+                                        <div class="sp-gachngang"></div>
+                                        <div class="sp-modal-thuonghieu">
+                                            Thương hiệu: 
+                                            <p>Meo store</p>
+                                            Xuất xứ:
+                                            <p>Việt Nam</p>
+                                        </div>
+                                        <div class="sp-gachngang"></div>
+                                        <div class="sp-modal-giaohang">
+                                            <img src="//bizweb.dktcdn.net/100/445/694/themes/848484/assets/icon_service_product_1.svg?1695302705094" alt="Giao hàng toàn quốc">
+                                            <p>Giao toàn quốc</p>
+                                        </div>
+                                        <div class="sp-gachngang"></div>
+                                        <div class="sp-modal-star">
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <div class="sp-gachngang"></div>
+                                        <div class="sp-thongtinsp">
+                                            <div class="sp-thongtin-header">𝑫𝒓𝒆𝒔𝒔 𝒃𝒚 𝑴𝒆𝒐</div>
+                                            <div>Thông tin sản phẩm</div>
+                                            <div>Dress code: DH04403</div>
+                                            <div  class="sp-thongtin-displayflex">Color<p>White</p></div>
+                                            <div class="sp-thongtin-displayflex">Hình ảnh được sản xuất độc quyền bởi<p class="thongtin-header">𝐌𝐄𝐎 𝐒𝐓𝐎𝐑𝐄</p></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer">
+                                    <div class="gril">
+                                        <div class="gril-colum">
+                                            <div class="footer-gril-colum3">
+                                                <div class="footer-gril-colum3__footer">
+                                                    <h2 class="footer-h2">Về chúng tui</h2>
+                                                    <div class="footer-address">
+                                                        <i class="fa-solid fa-location-dot"></i>
+                                                        <span>489A/4A Huỳnh Văn Bánh, Phường 13, Quận Phú Nhuận, TP. Hồ Chí Minh</span>
+                                                    </div>
+                                                    <div class="footer-address">
+                                                        <i class="fa-regular fa-clock"></i>
+                                                        <span>Giờ làm việc: Từ 10h00 đến 21h00 các ngày trong tuần từ Thứ 2 đến Chủ nhật</span>
+                                                    </div>
+                                                    <div class="footer-address">
+                                                        <i class="fa-solid fa-phone"></i>
+                                                        <span>Hotline:</span>
+                                                        <a href="">0914975952</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="footer-gril-colum3">
+                                                <div class="footer-help-colum3__footer footer-help-colum3__footer-imgh2">
+                                                    <img src="//bizweb.dktcdn.net/100/445/694/themes/848484/assets/logo.png?1695302705094" alt="">
+                                                    <p>"Sự hài lòng của quý khách là ưu tiên hàng đầu của chúng tôi. Chúng tôi đảm bảo các sản
+                                                        phẩm được sản xuất với độ chính xác và sự chăm chút cao nhất để đáp ứng tiêu chuẩn chất lượng cao."</p>
+                                                </div>
+                                            </div>
+                                            <div class="footer-gril-colum3">
+                                                <div class="footer-help-colum3__footer">
+                                                    <h2 class="footer-h2">Fanpage</h2>
+                                                    <img src="img/Screenshot 2024-08-11 123907.png" alt="" class="footer-fanpage">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="gril-colum">
+                                            <div class="footer-gril-colum3">
+                                                <div class="footer-gril-colum3__footer">
+                                                    <div class="footer-social">
+                                                        <h2 class="footer-h2">Kết nối với chúng tui</h2>
+                                                        <div class="socials-container">
+                                                            <a href="#" class="social twitter">
+                                                                <svg height="1em" viewBox="0 0 512 512">
+                                                                <path
+                                                                    d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                                                                ></path>
+                                                                </svg>
+                                                            </a>
+                            
+                                                            <a href="#" class="social facebook"
+                                                                ><svg height="1em" viewBox="0 0 320 512">
+                                                                <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+                                                                </path></svg>
+                                                            </a>
+                            
+                                                            <a href="#" class="social google-plus">
+                                                                <svg height="1em" viewBox="0 0 640 512">
+                                                                <path
+                                                                    d="M386.061 228.496c1.834 9.692 3.143 19.384 3.143 31.956C389.204 370.205 315.599 448 204.8 448c-106.084 0-192-85.915-192-192s85.916-192 192-192c51.864 0 95.083 18.859 128.611 50.292l-52.126 50.03c-14.145-13.621-39.028-29.599-76.485-29.599-65.484 0-118.92 54.221-118.92 121.277 0 67.056 53.436 121.277 118.92 121.277 75.961 0 104.513-54.745 108.965-82.773H204.8v-66.009h181.261zm185.406 6.437V179.2h-56.001v55.733h-55.733v56.001h55.733v55.733h56.001v-55.733H627.2v-56.001h-55.733z"
+                                                                ></path>
+                                                                </svg>
+                                                            </a>
+                            
+                                                            <a href="#" class="social instagram"
+                                                                ><svg height="1em" viewBox="0 0 448 512">
+                                                                <path
+                                                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                            
+                                                                </path>
+                                                                </svg>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="footer-gril-colum3">
+                                                <div class="footer-gril-colum3__footer">
+                                                    <div class="footer-social">
+                                                        <h2 class="footer-h2">Phương thức thanh toán</h2>
+                                                        <img src="//bizweb.dktcdn.net/100/283/016/themes/877652/assets/payment.png?1676254581506" alt="Payment" class="socials-container">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="footer-gril-colum3">
+                                                <div class="footer-gril-colum3__footer">
+                                                    <div class="footer-social">
+                                                        <h2 class="footer-h2">Trợ giúp</h2>
+                                                        <div class="footer-gril-colum3__footer-inputbox">
+                                                            <div class="inputbox">
+                                                                <input id="" required="required">
+                                                                <span>Nhập email...</span>
+                                                                <i></i>
+                                                            </div>
+                                                            <a href="" class="gui">Gửi</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div> 
+                            <!-- modal -->
+        
+                            <div class="content-gril__colum4">
+                                <div class="content-gril__colum-img-content">
+                                    <div class="content-gril__colum-img" onclick="openModalthongtinsp('productModalsppk4')">
+                                        <img src="img/img/phukien4.webp" alt="" class="content-gril__colum4-img">
+                                    </div>
+                                    <p class="masanpham">AD3333</p>
+                                    <p class="gia">1.500.000Đ</p>
+                                    <div class="titkec">
+                                        <p onclick="addToCart(this)">To add cart</p>
+                                        <div></div>
+                                        <p>Buy</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- modal -->
+                            <div class="sp-modal-content__img" id="productModalsppk4">
+                                <div class="sp-modal-content__width">
+                                    <i class="sp-close-thongtinsp fa-solid fa-xmark" id="close" onclick="closeModal('productModalsppk4')"></i>
+                                    <div class="sp-content-gril__colum-img-1">
+                                        <a href="">Trang chủ</a>
+                                        <p>/</p>
+                                        <a href="">Đầm màu</a>
+                                        <p>/</p>
+                                        <a href="">Sản phẩm</a>
+                                    </div>
+                                <div class="sp-content-gril__colum-img">
+                                    <div class="sp-content-gril__colum-img-2">
+                                        <img id="mainImage" src="img/img/phukien4.webp" alt="" class="sp-content-gril__colum4-img">
+                                        <div class="anhphu">
+                                            <img src="img/img/phukien4.webp" alt="" class="sp-anhphu-img" onclick="changeMainImage(this)">
+                                            <img src="" alt="" class="sp-anhphu-img" onclick="changeMainImage(this)">
+                                            <img src="" alt="" class="sp-anhphu-img" onclick="changeMainImage(this)">
+                                        </div>
+                                    </div>
+                                    <div class="sp-content-gril__colum-img-2">
+                                        <p class="sp-modal-masanpham">AD3333</p>
+                                        <p class="sp-modal-gia">1.500.000Đ<a href="">Mua ngay</a></p>
+                                        <div class="sp-modal-size">
+                                            <a href="#" onclick="changeColor(this)">XS</a>
+                                            <a href="#" onclick="changeColor(this)">S</a>
+                                            <a href="#" onclick="changeColor(this)">M</a>
+                                            <a href="#" onclick="changeColor(this)">L</a>
+                                            <a href="#" onclick="changeColor(this)">XL</a>
+                                        </div>
+                                        <div class="sp-gachngang"></div>
+                                        <div class="sp-modal-thuonghieu">
+                                            Thương hiệu: 
+                                            <p>Meo store</p>
+                                            Xuất xứ:
+                                            <p>Việt Nam</p>
+                                        </div>
+                                        <div class="sp-gachngang"></div>
+                                        <div class="sp-modal-giaohang">
+                                            <img src="//bizweb.dktcdn.net/100/445/694/themes/848484/assets/icon_service_product_1.svg?1695302705094" alt="Giao hàng toàn quốc">
+                                            <p>Giao toàn quốc</p>
+                                        </div>
+                                        <div class="sp-gachngang"></div>
+                                        <div class="sp-modal-star">
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <div class="sp-gachngang"></div>
+                                        <div class="sp-thongtinsp">
+                                            <div class="sp-thongtin-header">𝑫𝒓𝒆𝒔𝒔 𝒃𝒚 𝑴𝒆𝒐</div>
+                                            <div>Thông tin sản phẩm</div>
+                                            <div>Dress code: DH04403</div>
+                                            <div  class="sp-thongtin-displayflex">Color<p>White</p></div>
+                                            <div class="sp-thongtin-displayflex">Hình ảnh được sản xuất độc quyền bởi<p class="thongtin-header">𝐌𝐄𝐎 𝐒𝐓𝐎𝐑𝐄</p></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer">
+                                    <div class="gril">
+                                        <div class="gril-colum">
+                                            <div class="footer-gril-colum3">
+                                                <div class="footer-gril-colum3__footer">
+                                                    <h2 class="footer-h2">Về chúng tui</h2>
+                                                    <div class="footer-address">
+                                                        <i class="fa-solid fa-location-dot"></i>
+                                                        <span>489A/4A Huỳnh Văn Bánh, Phường 13, Quận Phú Nhuận, TP. Hồ Chí Minh</span>
+                                                    </div>
+                                                    <div class="footer-address">
+                                                        <i class="fa-regular fa-clock"></i>
+                                                        <span>Giờ làm việc: Từ 10h00 đến 21h00 các ngày trong tuần từ Thứ 2 đến Chủ nhật</span>
+                                                    </div>
+                                                    <div class="footer-address">
+                                                        <i class="fa-solid fa-phone"></i>
+                                                        <span>Hotline:</span>
+                                                        <a href="">0914975952</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="footer-gril-colum3">
+                                                <div class="footer-help-colum3__footer footer-help-colum3__footer-imgh2">
+                                                    <img src="//bizweb.dktcdn.net/100/445/694/themes/848484/assets/logo.png?1695302705094" alt="">
+                                                    <p>"Sự hài lòng của quý khách là ưu tiên hàng đầu của chúng tôi. Chúng tôi đảm bảo các sản
+                                                        phẩm được sản xuất với độ chính xác và sự chăm chút cao nhất để đáp ứng tiêu chuẩn chất lượng cao."</p>
+                                                </div>
+                                            </div>
+                                            <div class="footer-gril-colum3">
+                                                <div class="footer-help-colum3__footer">
+                                                    <h2 class="footer-h2">Fanpage</h2>
+                                                    <img src="img/Screenshot 2024-08-11 123907.png" alt="" class="footer-fanpage">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="gril-colum">
+                                            <div class="footer-gril-colum3">
+                                                <div class="footer-gril-colum3__footer">
+                                                    <div class="footer-social">
+                                                        <h2 class="footer-h2">Kết nối với chúng tui</h2>
+                                                        <div class="socials-container">
+                                                            <a href="#" class="social twitter">
+                                                                <svg height="1em" viewBox="0 0 512 512">
+                                                                <path
+                                                                    d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                                                                ></path>
+                                                                </svg>
+                                                            </a>
+                            
+                                                            <a href="#" class="social facebook"
+                                                                ><svg height="1em" viewBox="0 0 320 512">
+                                                                <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+                                                                </path></svg>
+                                                            </a>
+                            
+                                                            <a href="#" class="social google-plus">
+                                                                <svg height="1em" viewBox="0 0 640 512">
+                                                                <path
+                                                                    d="M386.061 228.496c1.834 9.692 3.143 19.384 3.143 31.956C389.204 370.205 315.599 448 204.8 448c-106.084 0-192-85.915-192-192s85.916-192 192-192c51.864 0 95.083 18.859 128.611 50.292l-52.126 50.03c-14.145-13.621-39.028-29.599-76.485-29.599-65.484 0-118.92 54.221-118.92 121.277 0 67.056 53.436 121.277 118.92 121.277 75.961 0 104.513-54.745 108.965-82.773H204.8v-66.009h181.261zm185.406 6.437V179.2h-56.001v55.733h-55.733v56.001h55.733v55.733h56.001v-55.733H627.2v-56.001h-55.733z"
+                                                                ></path>
+                                                                </svg>
+                                                            </a>
+                            
+                                                            <a href="#" class="social instagram"
+                                                                ><svg height="1em" viewBox="0 0 448 512">
+                                                                <path
+                                                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                            
+                                                                </path>
+                                                                </svg>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="footer-gril-colum3">
+                                                <div class="footer-gril-colum3__footer">
+                                                    <div class="footer-social">
+                                                        <h2 class="footer-h2">Phương thức thanh toán</h2>
+                                                        <img src="//bizweb.dktcdn.net/100/283/016/themes/877652/assets/payment.png?1676254581506" alt="Payment" class="socials-container">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="footer-gril-colum3">
+                                                <div class="footer-gril-colum3__footer">
+                                                    <div class="footer-social">
+                                                        <h2 class="footer-h2">Trợ giúp</h2>
+                                                        <div class="footer-gril-colum3__footer-inputbox">
+                                                            <div class="inputbox">
+                                                                <input id="" required="required">
+                                                                <span>Nhập email...</span>
+                                                                <i></i>
+                                                            </div>
+                                                            <a href="" class="gui">Gửi</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div> 
+                            <!-- modal -->
+        
+                            <div class="content-gril__colum4">
+                                <div class="content-gril__colum-img-content">
+                                    <div class="content-gril__colum-img" onclick="openModalthongtinsp('productModalsppk5')">
+                                        <img src="img/img/phukien5.webp" alt="" class="content-gril__colum4-img">
+                                    </div>
+                                    <p class="masanpham">AD4444</p>
+                                    <p class="gia">3.000.000Đ</p>
+                                    <div class="titkec">
+                                        <p onclick="addToCart(this)">To add cart</p>
+                                        <div></div>
+                                        <p>Buy</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- modal -->
+                            <div class="sp-modal-content__img" id="productModalsppk5">
+                                <div class="sp-modal-content__width">
+                                    <i class="sp-close-thongtinsp fa-solid fa-xmark" id="close" onclick="closeModal('productModalsppk5')"></i>
+                                    <div class="sp-content-gril__colum-img-1">
+                                        <a href="">Trang chủ</a>
+                                        <p>/</p>
+                                        <a href="">Đầm màu</a>
+                                        <p>/</p>
+                                        <a href="">Sản phẩm</a>
+                                    </div>
+                                <div class="sp-content-gril__colum-img">
+                                    <div class="sp-content-gril__colum-img-2">
+                                        <img id="mainImage" src="img/img/phukien5.webp" alt="" class="sp-content-gril__colum4-img">
+                                        <div class="anhphu">
+                                            <img src="img/img/phukien5.webp" alt="" class="sp-anhphu-img" onclick="changeMainImage(this)">
+                                            <img src="" alt="" class="sp-anhphu-img" onclick="changeMainImage(this)">
+                                            <img src="" alt="" class="sp-anhphu-img" onclick="changeMainImage(this)">
+                                        </div>
+                                    </div>
+                                    <div class="sp-content-gril__colum-img-2">
+                                        <p class="sp-modal-masanpham">AD4444</p>
+                                        <p class="sp-modal-gia">3.000.000Đ<a href="">Mua ngay</a></p>
+                                        <div class="sp-modal-size">
+                                            <a href="#" onclick="changeColor(this)">XS</a>
+                                            <a href="#" onclick="changeColor(this)">S</a>
+                                            <a href="#" onclick="changeColor(this)">M</a>
+                                            <a href="#" onclick="changeColor(this)">L</a>
+                                            <a href="#" onclick="changeColor(this)">XL</a>
+                                        </div>
+                                        <div class="sp-gachngang"></div>
+                                        <div class="sp-modal-thuonghieu">
+                                            Thương hiệu: 
+                                            <p>Meo store</p>
+                                            Xuất xứ:
+                                            <p>Việt Nam</p>
+                                        </div>
+                                        <div class="sp-gachngang"></div>
+                                        <div class="sp-modal-giaohang">
+                                            <img src="//bizweb.dktcdn.net/100/445/694/themes/848484/assets/icon_service_product_1.svg?1695302705094" alt="Giao hàng toàn quốc">
+                                            <p>Giao toàn quốc</p>
+                                        </div>
+                                        <div class="sp-gachngang"></div>
+                                        <div class="sp-modal-star">
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <div class="sp-gachngang"></div>
+                                        <div class="sp-thongtinsp">
+                                            <div class="sp-thongtin-header">𝑫𝒓𝒆𝒔𝒔 𝒃𝒚 𝑴𝒆𝒐</div>
+                                            <div>Thông tin sản phẩm</div>
+                                            <div>Dress code: DH04403</div>
+                                            <div  class="sp-thongtin-displayflex">Color<p>White</p></div>
+                                            <div class="sp-thongtin-displayflex">Hình ảnh được sản xuất độc quyền bởi<p class="thongtin-header">𝐌𝐄𝐎 𝐒𝐓𝐎𝐑𝐄</p></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer">
+                                    <div class="gril">
+                                        <div class="gril-colum">
+                                            <div class="footer-gril-colum3">
+                                                <div class="footer-gril-colum3__footer">
+                                                    <h2 class="footer-h2">Về chúng tui</h2>
+                                                    <div class="footer-address">
+                                                        <i class="fa-solid fa-location-dot"></i>
+                                                        <span>489A/4A Huỳnh Văn Bánh, Phường 13, Quận Phú Nhuận, TP. Hồ Chí Minh</span>
+                                                    </div>
+                                                    <div class="footer-address">
+                                                        <i class="fa-regular fa-clock"></i>
+                                                        <span>Giờ làm việc: Từ 10h00 đến 21h00 các ngày trong tuần từ Thứ 2 đến Chủ nhật</span>
+                                                    </div>
+                                                    <div class="footer-address">
+                                                        <i class="fa-solid fa-phone"></i>
+                                                        <span>Hotline:</span>
+                                                        <a href="">0914975952</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="footer-gril-colum3">
+                                                <div class="footer-help-colum3__footer footer-help-colum3__footer-imgh2">
+                                                    <img src="//bizweb.dktcdn.net/100/445/694/themes/848484/assets/logo.png?1695302705094" alt="">
+                                                    <p>"Sự hài lòng của quý khách là ưu tiên hàng đầu của chúng tôi. Chúng tôi đảm bảo các sản
+                                                        phẩm được sản xuất với độ chính xác và sự chăm chút cao nhất để đáp ứng tiêu chuẩn chất lượng cao."</p>
+                                                </div>
+                                            </div>
+                                            <div class="footer-gril-colum3">
+                                                <div class="footer-help-colum3__footer">
+                                                    <h2 class="footer-h2">Fanpage</h2>
+                                                    <img src="img/Screenshot 2024-08-11 123907.png" alt="" class="footer-fanpage">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="gril-colum">
+                                            <div class="footer-gril-colum3">
+                                                <div class="footer-gril-colum3__footer">
+                                                    <div class="footer-social">
+                                                        <h2 class="footer-h2">Kết nối với chúng tui</h2>
+                                                        <div class="socials-container">
+                                                            <a href="#" class="social twitter">
+                                                                <svg height="1em" viewBox="0 0 512 512">
+                                                                <path
+                                                                    d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                                                                ></path>
+                                                                </svg>
+                                                            </a>
+                            
+                                                            <a href="#" class="social facebook"
+                                                                ><svg height="1em" viewBox="0 0 320 512">
+                                                                <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+                                                                </path></svg>
+                                                            </a>
+                            
+                                                            <a href="#" class="social google-plus">
+                                                                <svg height="1em" viewBox="0 0 640 512">
+                                                                <path
+                                                                    d="M386.061 228.496c1.834 9.692 3.143 19.384 3.143 31.956C389.204 370.205 315.599 448 204.8 448c-106.084 0-192-85.915-192-192s85.916-192 192-192c51.864 0 95.083 18.859 128.611 50.292l-52.126 50.03c-14.145-13.621-39.028-29.599-76.485-29.599-65.484 0-118.92 54.221-118.92 121.277 0 67.056 53.436 121.277 118.92 121.277 75.961 0 104.513-54.745 108.965-82.773H204.8v-66.009h181.261zm185.406 6.437V179.2h-56.001v55.733h-55.733v56.001h55.733v55.733h56.001v-55.733H627.2v-56.001h-55.733z"
+                                                                ></path>
+                                                                </svg>
+                                                            </a>
+                            
+                                                            <a href="#" class="social instagram"
+                                                                ><svg height="1em" viewBox="0 0 448 512">
+                                                                <path
+                                                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                            
+                                                                </path>
+                                                                </svg>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="footer-gril-colum3">
+                                                <div class="footer-gril-colum3__footer">
+                                                    <div class="footer-social">
+                                                        <h2 class="footer-h2">Phương thức thanh toán</h2>
+                                                        <img src="//bizweb.dktcdn.net/100/283/016/themes/877652/assets/payment.png?1676254581506" alt="Payment" class="socials-container">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="footer-gril-colum3">
+                                                <div class="footer-gril-colum3__footer">
+                                                    <div class="footer-social">
+                                                        <h2 class="footer-h2">Trợ giúp</h2>
+                                                        <div class="footer-gril-colum3__footer-inputbox">
+                                                            <div class="inputbox">
+                                                                <input id="" required="required">
+                                                                <span>Nhập email...</span>
+                                                                <i></i>
+                                                            </div>
+                                                            <a href="" class="gui">Gửi</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div> 
+                            <!-- modal -->
+        
+                            <div class="content-gril__colum4">
+                                <div class="content-gril__colum-img-content">
+                                    <div class="content-gril__colum-img" onclick="openModalthongtinsp('productModalsppk6')">
+                                        <img src="img/img/phukien6.webp" alt="" class="content-gril__colum4-img">
+                                    </div>
+                                    <p class="masanpham">AD5555</p>
+                                    <p class="gia">2.000.000Đ</p>
+                                    <div class="titkec">
+                                        <p onclick="addToCart(this)">To add cart</p>
+                                        <div></div>
+                                        <p>Buy</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- modal -->
+                            <div class="sp-modal-content__img" id="productModalsppk6">
+                                <div class="sp-modal-content__width">
+                                    <i class="sp-close-thongtinsp fa-solid fa-xmark" id="close" onclick="closeModal('productModalsppk6')"></i>
+                                    <div class="sp-content-gril__colum-img-1">
+                                        <a href="">Trang chủ</a>
+                                        <p>/</p>
+                                        <a href="">Đầm màu</a>
+                                        <p>/</p>
+                                        <a href="">Sản phẩm</a>
+                                    </div>
+                                <div class="sp-content-gril__colum-img">
+                                    <div class="sp-content-gril__colum-img-2">
+                                        <img id="mainImage" src="img/img/phukien6.webp" alt="" class="sp-content-gril__colum4-img">
+                                        <div class="anhphu">
+                                            <img src="img/img/phukien6.webp" alt="" class="sp-anhphu-img" onclick="changeMainImage(this)">
+                                            <img src="" alt="" class="sp-anhphu-img" onclick="changeMainImage(this)">
+                                            <img src="" alt="" class="sp-anhphu-img" onclick="changeMainImage(this)">
+                                        </div>
+                                    </div>
+                                    <div class="sp-content-gril__colum-img-2">
+                                        <p class="sp-modal-masanpham">AD5555</p>
+                                        <p class="sp-modal-gia">2.000.000Đ<a href="">Mua ngay</a></p>
+                                        <div class="sp-modal-size">
+                                            <a href="#" onclick="changeColor(this)">XS</a>
+                                            <a href="#" onclick="changeColor(this)">S</a>
+                                            <a href="#" onclick="changeColor(this)">M</a>
+                                            <a href="#" onclick="changeColor(this)">L</a>
+                                            <a href="#" onclick="changeColor(this)">XL</a>
+                                        </div>
+                                        <div class="sp-gachngang"></div>
+                                        <div class="sp-modal-thuonghieu">
+                                            Thương hiệu: 
+                                            <p>Meo store</p>
+                                            Xuất xứ:
+                                            <p>Việt Nam</p>
+                                        </div>
+                                        <div class="sp-gachngang"></div>
+                                        <div class="sp-modal-giaohang">
+                                            <img src="//bizweb.dktcdn.net/100/445/694/themes/848484/assets/icon_service_product_1.svg?1695302705094" alt="Giao hàng toàn quốc">
+                                            <p>Giao toàn quốc</p>
+                                        </div>
+                                        <div class="sp-gachngang"></div>
+                                        <div class="sp-modal-star">
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <div class="sp-gachngang"></div>
+                                        <div class="sp-thongtinsp">
+                                            <div class="sp-thongtin-header">𝑫𝒓𝒆𝒔𝒔 𝒃𝒚 𝑴𝒆𝒐</div>
+                                            <div>Thông tin sản phẩm</div>
+                                            <div>Dress code: DH04403</div>
+                                            <div  class="sp-thongtin-displayflex">Color<p>White</p></div>
+                                            <div class="sp-thongtin-displayflex">Hình ảnh được sản xuất độc quyền bởi<p class="thongtin-header">𝐌𝐄𝐎 𝐒𝐓𝐎𝐑𝐄</p></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer">
+                                    <div class="gril">
+                                        <div class="gril-colum">
+                                            <div class="footer-gril-colum3">
+                                                <div class="footer-gril-colum3__footer">
+                                                    <h2 class="footer-h2">Về chúng tui</h2>
+                                                    <div class="footer-address">
+                                                        <i class="fa-solid fa-location-dot"></i>
+                                                        <span>489A/4A Huỳnh Văn Bánh, Phường 13, Quận Phú Nhuận, TP. Hồ Chí Minh</span>
+                                                    </div>
+                                                    <div class="footer-address">
+                                                        <i class="fa-regular fa-clock"></i>
+                                                        <span>Giờ làm việc: Từ 10h00 đến 21h00 các ngày trong tuần từ Thứ 2 đến Chủ nhật</span>
+                                                    </div>
+                                                    <div class="footer-address">
+                                                        <i class="fa-solid fa-phone"></i>
+                                                        <span>Hotline:</span>
+                                                        <a href="">0914975952</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="footer-gril-colum3">
+                                                <div class="footer-help-colum3__footer footer-help-colum3__footer-imgh2">
+                                                    <img src="//bizweb.dktcdn.net/100/445/694/themes/848484/assets/logo.png?1695302705094" alt="">
+                                                    <p>"Sự hài lòng của quý khách là ưu tiên hàng đầu của chúng tôi. Chúng tôi đảm bảo các sản
+                                                        phẩm được sản xuất với độ chính xác và sự chăm chút cao nhất để đáp ứng tiêu chuẩn chất lượng cao."</p>
+                                                </div>
+                                            </div>
+                                            <div class="footer-gril-colum3">
+                                                <div class="footer-help-colum3__footer">
+                                                    <h2 class="footer-h2">Fanpage</h2>
+                                                    <img src="img/Screenshot 2024-08-11 123907.png" alt="" class="footer-fanpage">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="gril-colum">
+                                            <div class="footer-gril-colum3">
+                                                <div class="footer-gril-colum3__footer">
+                                                    <div class="footer-social">
+                                                        <h2 class="footer-h2">Kết nối với chúng tui</h2>
+                                                        <div class="socials-container">
+                                                            <a href="#" class="social twitter">
+                                                                <svg height="1em" viewBox="0 0 512 512">
+                                                                <path
+                                                                    d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                                                                ></path>
+                                                                </svg>
+                                                            </a>
+                            
+                                                            <a href="#" class="social facebook"
+                                                                ><svg height="1em" viewBox="0 0 320 512">
+                                                                <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+                                                                </path></svg>
+                                                            </a>
+                            
+                                                            <a href="#" class="social google-plus">
+                                                                <svg height="1em" viewBox="0 0 640 512">
+                                                                <path
+                                                                    d="M386.061 228.496c1.834 9.692 3.143 19.384 3.143 31.956C389.204 370.205 315.599 448 204.8 448c-106.084 0-192-85.915-192-192s85.916-192 192-192c51.864 0 95.083 18.859 128.611 50.292l-52.126 50.03c-14.145-13.621-39.028-29.599-76.485-29.599-65.484 0-118.92 54.221-118.92 121.277 0 67.056 53.436 121.277 118.92 121.277 75.961 0 104.513-54.745 108.965-82.773H204.8v-66.009h181.261zm185.406 6.437V179.2h-56.001v55.733h-55.733v56.001h55.733v55.733h56.001v-55.733H627.2v-56.001h-55.733z"
+                                                                ></path>
+                                                                </svg>
+                                                            </a>
+                            
+                                                            <a href="#" class="social instagram"
+                                                                ><svg height="1em" viewBox="0 0 448 512">
+                                                                <path
+                                                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                            
+                                                                </path>
+                                                                </svg>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="footer-gril-colum3">
+                                                <div class="footer-gril-colum3__footer">
+                                                    <div class="footer-social">
+                                                        <h2 class="footer-h2">Phương thức thanh toán</h2>
+                                                        <img src="//bizweb.dktcdn.net/100/283/016/themes/877652/assets/payment.png?1676254581506" alt="Payment" class="socials-container">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="footer-gril-colum3">
+                                                <div class="footer-gril-colum3__footer">
+                                                    <div class="footer-social">
+                                                        <h2 class="footer-h2">Trợ giúp</h2>
+                                                        <div class="footer-gril-colum3__footer-inputbox">
+                                                            <div class="inputbox">
+                                                                <input id="" required="required">
+                                                                <span>Nhập email...</span>
+                                                                <i></i>
+                                                            </div>
+                                                            <a href="" class="gui">Gửi</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div> 
+                            <!-- modal -->
+        
+                            <div class="content-gril__colum4">
+                                <div class="content-gril__colum-img-content">
+                                    <div class="content-gril__colum-img" onclick="openModalthongtinsp('productModalsppk7')">
+                                        <img src="img/img/phukien7.webp" alt="" class="content-gril__colum4-img">
+                                    </div>
+                                    <p class="masanpham">AD6666</p>
+                                    <p class="gia">4.000.000Đ</p>
+                                    <div class="titkec">
+                                        <p onclick="addToCart(this)">To add cart</p>
+                                        <div></div>
+                                        <p>Buy</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- modal -->
+                            <div class="sp-modal-content__img" id="productModalsppk7">
+                                <div class="sp-modal-content__width">
+                                    <i class="sp-close-thongtinsp fa-solid fa-xmark" id="close" onclick="closeModal('productModalsppk7')"></i>
+                                    <div class="sp-content-gril__colum-img-1">
+                                        <a href="">Trang chủ</a>
+                                        <p>/</p>
+                                        <a href="">Đầm màu</a>
+                                        <p>/</p>
+                                        <a href="">Sản phẩm</a>
+                                    </div>
+                                <div class="sp-content-gril__colum-img">
+                                    <div class="sp-content-gril__colum-img-2">
+                                        <img id="mainImage" src="img/img/phukien7.webp" alt="" class="sp-content-gril__colum4-img">
+                                        <div class="anhphu">
+                                            <img src="img/img/phukien7.webp" alt="" class="sp-anhphu-img" onclick="changeMainImage(this)">
+                                            <img src="" alt="" class="sp-anhphu-img" onclick="changeMainImage(this)">
+                                            <img src="" alt="" class="sp-anhphu-img" onclick="changeMainImage(this)">
+                                        </div>
+                                    </div>
+                                    <div class="sp-content-gril__colum-img-2">
+                                        <p class="sp-modal-masanpham">AD6666</p>
+                                        <p class="sp-modal-gia">4.000.000Đ<a href="">Mua ngay</a></p>
+                                        <div class="sp-modal-size">
+                                            <a href="#" onclick="changeColor(this)">XS</a>
+                                            <a href="#" onclick="changeColor(this)">S</a>
+                                            <a href="#" onclick="changeColor(this)">M</a>
+                                            <a href="#" onclick="changeColor(this)">L</a>
+                                            <a href="#" onclick="changeColor(this)">XL</a>
+                                        </div>
+                                        <div class="sp-gachngang"></div>
+                                        <div class="sp-modal-thuonghieu">
+                                            Thương hiệu: 
+                                            <p>Meo store</p>
+                                            Xuất xứ:
+                                            <p>Việt Nam</p>
+                                        </div>
+                                        <div class="sp-gachngang"></div>
+                                        <div class="sp-modal-giaohang">
+                                            <img src="//bizweb.dktcdn.net/100/445/694/themes/848484/assets/icon_service_product_1.svg?1695302705094" alt="Giao hàng toàn quốc">
+                                            <p>Giao toàn quốc</p>
+                                        </div>
+                                        <div class="sp-gachngang"></div>
+                                        <div class="sp-modal-star">
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <div class="sp-gachngang"></div>
+                                        <div class="sp-thongtinsp">
+                                            <div class="sp-thongtin-header">𝑫𝒓𝒆𝒔𝒔 𝒃𝒚 𝑴𝒆𝒐</div>
+                                            <div>Thông tin sản phẩm</div>
+                                            <div>Dress code: DH04403</div>
+                                            <div  class="sp-thongtin-displayflex">Color<p>White</p></div>
+                                            <div class="sp-thongtin-displayflex">Hình ảnh được sản xuất độc quyền bởi<p class="thongtin-header">𝐌𝐄𝐎 𝐒𝐓𝐎𝐑𝐄</p></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer">
+                                    <div class="gril">
+                                        <div class="gril-colum">
+                                            <div class="footer-gril-colum3">
+                                                <div class="footer-gril-colum3__footer">
+                                                    <h2 class="footer-h2">Về chúng tui</h2>
+                                                    <div class="footer-address">
+                                                        <i class="fa-solid fa-location-dot"></i>
+                                                        <span>489A/4A Huỳnh Văn Bánh, Phường 13, Quận Phú Nhuận, TP. Hồ Chí Minh</span>
+                                                    </div>
+                                                    <div class="footer-address">
+                                                        <i class="fa-regular fa-clock"></i>
+                                                        <span>Giờ làm việc: Từ 10h00 đến 21h00 các ngày trong tuần từ Thứ 2 đến Chủ nhật</span>
+                                                    </div>
+                                                    <div class="footer-address">
+                                                        <i class="fa-solid fa-phone"></i>
+                                                        <span>Hotline:</span>
+                                                        <a href="">0914975952</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="footer-gril-colum3">
+                                                <div class="footer-help-colum3__footer footer-help-colum3__footer-imgh2">
+                                                    <img src="//bizweb.dktcdn.net/100/445/694/themes/848484/assets/logo.png?1695302705094" alt="">
+                                                    <p>"Sự hài lòng của quý khách là ưu tiên hàng đầu của chúng tôi. Chúng tôi đảm bảo các sản
+                                                        phẩm được sản xuất với độ chính xác và sự chăm chút cao nhất để đáp ứng tiêu chuẩn chất lượng cao."</p>
+                                                </div>
+                                            </div>
+                                            <div class="footer-gril-colum3">
+                                                <div class="footer-help-colum3__footer">
+                                                    <h2 class="footer-h2">Fanpage</h2>
+                                                    <img src="img/Screenshot 2024-08-11 123907.png" alt="" class="footer-fanpage">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="gril-colum">
+                                            <div class="footer-gril-colum3">
+                                                <div class="footer-gril-colum3__footer">
+                                                    <div class="footer-social">
+                                                        <h2 class="footer-h2">Kết nối với chúng tui</h2>
+                                                        <div class="socials-container">
+                                                            <a href="#" class="social twitter">
+                                                                <svg height="1em" viewBox="0 0 512 512">
+                                                                <path
+                                                                    d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                                                                ></path>
+                                                                </svg>
+                                                            </a>
+                            
+                                                            <a href="#" class="social facebook"
+                                                                ><svg height="1em" viewBox="0 0 320 512">
+                                                                <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+                                                                </path></svg>
+                                                            </a>
+                            
+                                                            <a href="#" class="social google-plus">
+                                                                <svg height="1em" viewBox="0 0 640 512">
+                                                                <path
+                                                                    d="M386.061 228.496c1.834 9.692 3.143 19.384 3.143 31.956C389.204 370.205 315.599 448 204.8 448c-106.084 0-192-85.915-192-192s85.916-192 192-192c51.864 0 95.083 18.859 128.611 50.292l-52.126 50.03c-14.145-13.621-39.028-29.599-76.485-29.599-65.484 0-118.92 54.221-118.92 121.277 0 67.056 53.436 121.277 118.92 121.277 75.961 0 104.513-54.745 108.965-82.773H204.8v-66.009h181.261zm185.406 6.437V179.2h-56.001v55.733h-55.733v56.001h55.733v55.733h56.001v-55.733H627.2v-56.001h-55.733z"
+                                                                ></path>
+                                                                </svg>
+                                                            </a>
+                            
+                                                            <a href="#" class="social instagram"
+                                                                ><svg height="1em" viewBox="0 0 448 512">
+                                                                <path
+                                                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                            
+                                                                </path>
+                                                                </svg>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="footer-gril-colum3">
+                                                <div class="footer-gril-colum3__footer">
+                                                    <div class="footer-social">
+                                                        <h2 class="footer-h2">Phương thức thanh toán</h2>
+                                                        <img src="//bizweb.dktcdn.net/100/283/016/themes/877652/assets/payment.png?1676254581506" alt="Payment" class="socials-container">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="footer-gril-colum3">
+                                                <div class="footer-gril-colum3__footer">
+                                                    <div class="footer-social">
+                                                        <h2 class="footer-h2">Trợ giúp</h2>
+                                                        <div class="footer-gril-colum3__footer-inputbox">
+                                                            <div class="inputbox">
+                                                                <input id="" required="required">
+                                                                <span>Nhập email...</span>
+                                                                <i></i>
+                                                            </div>
+                                                            <a href="" class="gui">Gửi</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div> 
+                            <!-- modal -->
+                            
+                            <div class="content-gril__colum4">
+                                <div class="content-gril__colum-img-content">
+                                    <div class="content-gril__colum-img" onclick="openModalthongtinsp('productModalsppk8')">
+                                        <img src="img/img/phukien8.webp" alt="" class="content-gril__colum4-img">
+                                    </div>
+                                    <p class="masanpham">AD7777</p>
+                                    <p class="gia">2.500.000Đ</p>
+                                    <div class="titkec">
+                                        <p onclick="addToCart(this)">To add cart</p>
+                                        <div></div>
+                                        <p>Buy</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- modal -->
+                            <div class="sp-modal-content__img" id="productModalsppk8">
+                                <div class="sp-modal-content__width">
+                                    <i class="sp-close-thongtinsp fa-solid fa-xmark" id="close" onclick="closeModal('productModalsppk8')"></i>
+                                    <div class="sp-content-gril__colum-img-1">
+                                        <a href="">Trang chủ</a>
+                                        <p>/</p>
+                                        <a href="">Đầm màu</a>
+                                        <p>/</p>
+                                        <a href="">Sản phẩm</a>
+                                    </div>
+                                <div class="sp-content-gril__colum-img">
+                                    <div class="sp-content-gril__colum-img-2">
+                                        <img id="mainImage" src="img/img/phukien8.webp" alt="" class="sp-content-gril__colum4-img">
+                                        <div class="anhphu">
+                                            <img src="img/img/phukien8.webp" alt="" class="sp-anhphu-img" onclick="changeMainImage(this)">
+                                            <img src="" alt="" class="sp-anhphu-img" onclick="changeMainImage(this)">
+                                            <img src="" alt="" class="sp-anhphu-img" onclick="changeMainImage(this)">
+                                        </div>
+                                    </div>
+                                    <div class="sp-content-gril__colum-img-2">
+                                        <p class="sp-modal-masanpham">AD7777</p>
+                                        <p class="sp-modal-gia">3.500.000Đ<a href="">Mua ngay</a></p>
+                                        <div class="sp-modal-size">
+                                            <a href="#" onclick="changeColor(this)">XS</a>
+                                            <a href="#" onclick="changeColor(this)">S</a>
+                                            <a href="#" onclick="changeColor(this)">M</a>
+                                            <a href="#" onclick="changeColor(this)">L</a>
+                                            <a href="#" onclick="changeColor(this)">XL</a>
+                                        </div>
+                                        <div class="sp-gachngang"></div>
+                                        <div class="sp-modal-thuonghieu">
+                                            Thương hiệu: 
+                                            <p>Meo store</p>
+                                            Xuất xứ:
+                                            <p>Việt Nam</p>
+                                        </div>
+                                        <div class="sp-gachngang"></div>
+                                        <div class="sp-modal-giaohang">
+                                            <img src="//bizweb.dktcdn.net/100/445/694/themes/848484/assets/icon_service_product_1.svg?1695302705094" alt="Giao hàng toàn quốc">
+                                            <p>Giao toàn quốc</p>
+                                        </div>
+                                        <div class="sp-gachngang"></div>
+                                        <div class="sp-modal-star">
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <div class="sp-gachngang"></div>
+                                        <div class="sp-thongtinsp">
+                                            <div class="sp-thongtin-header">𝑫𝒓𝒆𝒔𝒔 𝒃𝒚 𝑴𝒆𝒐</div>
+                                            <div>Thông tin sản phẩm</div>
+                                            <div>Dress code: DH04403</div>
+                                            <div  class="sp-thongtin-displayflex">Color<p>White</p></div>
+                                            <div class="sp-thongtin-displayflex">Hình ảnh được sản xuất độc quyền bởi<p class="thongtin-header">𝐌𝐄𝐎 𝐒𝐓𝐎𝐑𝐄</p></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer">
+                                    <div class="gril">
+                                        <div class="gril-colum">
+                                            <div class="footer-gril-colum3">
+                                                <div class="footer-gril-colum3__footer">
+                                                    <h2 class="footer-h2">Về chúng tui</h2>
+                                                    <div class="footer-address">
+                                                        <i class="fa-solid fa-location-dot"></i>
+                                                        <span>489A/4A Huỳnh Văn Bánh, Phường 13, Quận Phú Nhuận, TP. Hồ Chí Minh</span>
+                                                    </div>
+                                                    <div class="footer-address">
+                                                        <i class="fa-regular fa-clock"></i>
+                                                        <span>Giờ làm việc: Từ 10h00 đến 21h00 các ngày trong tuần từ Thứ 2 đến Chủ nhật</span>
+                                                    </div>
+                                                    <div class="footer-address">
+                                                        <i class="fa-solid fa-phone"></i>
+                                                        <span>Hotline:</span>
+                                                        <a href="">0914975952</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="footer-gril-colum3">
+                                                <div class="footer-help-colum3__footer footer-help-colum3__footer-imgh2">
+                                                    <img src="//bizweb.dktcdn.net/100/445/694/themes/848484/assets/logo.png?1695302705094" alt="">
+                                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.0124151418586!2d106.68250017770268!3d10.886659861599396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d7cffe40acad%3A0xfdbee9ba82097387!2zNDAvMzAvNSDEkC4gVEwgNDQsIFRo4bqhbmggTOG7mWMsIFF14bqtbiAxMiwgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1725149145342!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                                </div>
+                                            </div>
+                                            <div class="footer-gril-colum3">
+                                                <div class="footer-help-colum3__footer">
+                                                    <h2 class="footer-h2">Fanpage</h2>
+                                                    <img src="img/Screenshot 2024-08-11 123907.png" alt="" class="footer-fanpage">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="gril-colum">
+                                            <div class="footer-gril-colum3">
+                                                <div class="footer-gril-colum3__footer">
+                                                    <div class="footer-social">
+                                                        <h2 class="footer-h2">Kết nối với chúng tui</h2>
+                                                        <div class="socials-container">
+                                                            <a href="#" class="social twitter">
+                                                                <svg height="1em" viewBox="0 0 512 512">
+                                                                <path
+                                                                    d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                                                                ></path>
+                                                                </svg>
+                                                            </a>
+                            
+                                                            <a href="#" class="social facebook"
+                                                                ><svg height="1em" viewBox="0 0 320 512">
+                                                                <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+                                                                </path></svg>
+                                                            </a>
+                            
+                                                            <a href="#" class="social google-plus">
+                                                                <svg height="1em" viewBox="0 0 640 512">
+                                                                <path
+                                                                    d="M386.061 228.496c1.834 9.692 3.143 19.384 3.143 31.956C389.204 370.205 315.599 448 204.8 448c-106.084 0-192-85.915-192-192s85.916-192 192-192c51.864 0 95.083 18.859 128.611 50.292l-52.126 50.03c-14.145-13.621-39.028-29.599-76.485-29.599-65.484 0-118.92 54.221-118.92 121.277 0 67.056 53.436 121.277 118.92 121.277 75.961 0 104.513-54.745 108.965-82.773H204.8v-66.009h181.261zm185.406 6.437V179.2h-56.001v55.733h-55.733v56.001h55.733v55.733h56.001v-55.733H627.2v-56.001h-55.733z"
+                                                                ></path>
+                                                                </svg>
+                                                            </a>
+                            
+                                                            <a href="#" class="social instagram"
+                                                                ><svg height="1em" viewBox="0 0 448 512">
+                                                                <path
+                                                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                            
+                                                                </path>
+                                                                </svg>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="footer-gril-colum3">
+                                                <div class="footer-gril-colum3__footer">
+                                                    <div class="footer-social">
+                                                        <h2 class="footer-h2">Phương thức thanh toán</h2>
+                                                        <img src="//bizweb.dktcdn.net/100/283/016/themes/877652/assets/payment.png?1676254581506" alt="Payment" class="socials-container">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="footer-gril-colum3">
+                                                <div class="footer-gril-colum3__footer">
+                                                    <div class="footer-social">
+                                                        <h2 class="footer-h2">Trợ giúp</h2>
+                                                        <div class="footer-gril-colum3__footer-inputbox">
+                                                            <div class="inputbox">
+                                                                <input id="" required="required">
+                                                                <span>Nhập email...</span>
+                                                                <i></i>
+                                                            </div>
+                                                            <a href="" class="gui">Gửi</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div> 
+                            <!-- modal -->
+                        </div>
+                    </div>
+                </div>
+            </div>
             
             
             <div class="content-vuthanh">
@@ -9808,16 +11233,15 @@
                             </div>
                         </div>
                         <div class="footer-gril-colum3">
-                            <div class="footer-help-colum3__footer footer-help-colum3__footer-imgh2">
-                                <img src="//bizweb.dktcdn.net/100/445/694/themes/848484/assets/logo.png?1695302705094" alt="">
-                                <p>"Sự hài lòng của quý khách là ưu tiên hàng đầu của chúng tôi. Chúng tôi đảm bảo các sản
-                                    phẩm được sản xuất với độ chính xác và sự chăm chút cao nhất để đáp ứng tiêu chuẩn chất lượng cao."</p>
-                            </div>
-                        </div>
-                        <div class="footer-gril-colum3">
                             <div class="footer-help-colum3__footer">
                                 <h2 class="footer-h2">Fanpage</h2>
                                 <img src="img/Screenshot 2024-08-11 123907.png" alt="" class="footer-fanpage">
+                            </div>
+                        </div>
+                        <div class="footer-gril-colum3">
+                            <div class="footer-help-colum3__footer footer-help-colum3__footer-imgh2">
+                                <img src="//bizweb.dktcdn.net/100/445/694/themes/848484/assets/logo.png?1695302705094" alt="">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.0124151418586!2d106.68250017770268!3d10.886659861599396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d7cffe40acad%3A0xfdbee9ba82097387!2zNDAvMzAvNSDEkC4gVEwgNDQsIFRo4bqhbmggTOG7mWMsIFF14bqtbiAxMiwgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1725149145342!5m2!1svi!2s" width="377" height="185" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                         </div>
                     </div>
@@ -9889,7 +11313,7 @@
             </div>
 
             <div class="banquyen">
-                @ Bản quyền thuộc về Meo Store | Cung cấp bởi designer:<a href="">VuThanh</a>
+                @ Nguyễn Vũ Thanh__2311556823
             </div>
         </div>
         
